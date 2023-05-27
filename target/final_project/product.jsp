@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="active-menu">
-                  <a href="product.html">Shop</a>
+                  <a href="product.jsp">Shop</a>
                   <ul class="sub-menu">
                     <li><a href="#">Nike</a></li>
                     <li><a href="#">Adidas</a></li>
