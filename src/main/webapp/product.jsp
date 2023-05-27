@@ -51,7 +51,7 @@
         <div class="wrap-menu-desktop how-shadow1">
           <nav class="limiter-menu-desktop container">
             <!-- Logo desktop -->
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
               <img src="images/icons/logo-01.png" alt="IMG-LOGO" />
             </a>
 
@@ -147,7 +147,7 @@
           </li>
 
           <li>
-            <a href="product.html">Shop</a>
+            <a href="product.jsp">Shop</a>
             <ul class="sub-menu-m">
               <li><a href="#">Nike</a></li>
               <li><a href="#">Adidas</a></li>
