@@ -1,0 +1,4 @@
+Control\DB\ProductDAO.class
+Model\Product.class
+Control\DB\DBconnect.class
+Control\ControlWeb\ProductServlet.class
