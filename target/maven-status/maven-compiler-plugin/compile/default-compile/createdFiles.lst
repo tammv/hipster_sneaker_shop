@@ -1,4 +1,14 @@
 Control\DB\ProductDAO.class
+Model\Constants.class
 Model\Product.class
+Control\ControlWeb\LoginByGoogle.class
 Control\DB\DBconnect.class
+Control\ControlWeb\processLink.class
+Control\ControlWeb\SignUpServlet.class
 Control\ControlWeb\ProductServlet.class
+Control\ControlWeb\Send$1.class
+Model\Account_Google.class
+Control\DB\UserDAO.class
+Control\ControlWeb\Send.class
+Model\Account_SignUp.class
+Control\ControlWeb\Login.class
