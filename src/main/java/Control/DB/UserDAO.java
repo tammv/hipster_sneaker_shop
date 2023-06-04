@@ -105,5 +105,46 @@ public class UserDAO {
         return list;
     }
 
+    public boolean checkEmail(String email) throws SQLException, ClassNotFoundException{
+        String query = "Select email From User_Table";
+        conn = DBconnect.makeConnection();
+        ps = conn.prepareStatement(query);
+        rs = ps.executeQuery();
+        while(rs.next()){
+            if (rs.getString(1).equalsIgnoreCase(email)){
+                
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void updatePassword(String email, String newpass) throws SQLException, ClassNotFoundException {
+        String query = "Update User_Table Set password = ? , update_at = ?  where email = ?";
+        conn = DBconnect.makeConnection();
+        Date currentDate = new Date();
+
+        // Chuyển đổi sang kiểu java.sql.Date
+        java.sql.Date sqlDate = new java.sql.Date(currentDate.getTime());
+        ps = conn.prepareStatement(query);
+        ps.setString(1, newpass);
+        ps.setDate(2, sqlDate);
+        ps.setString(3  , email);
+        ps.executeUpdate();
+
+    }
+
+    public String getEmailByUsername(String emailnusername) throws SQLException, ClassNotFoundException {
+        String query = "Select email From User_Table where username = ?";
+        conn = DBconnect.makeConnection();
+        ps = conn.prepareStatement(query);
+        ps.setString(1, emailnusername);
+        rs = ps.executeQuery();
+        while(rs.next()){
+            return rs.getString(1);
+        }
+        return null;
+    }
+
 }
 

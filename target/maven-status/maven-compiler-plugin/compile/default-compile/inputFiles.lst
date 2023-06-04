@@ -2,12 +2,16 @@ D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Model\Account_Google.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Model\Account_SignUp.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Model\Constants.java
+D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ForgotPass.java
+D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Model\Valid.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\ControlWeb\SignUpServlet.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ProductServlet.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\DB\UserDAO.java
+D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\ControlWeb\Reset.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\ControlWeb\Login.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\ControlWeb\LoginByGoogle.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Model\Product.java
+D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ProcessReset.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\DB\DBconnect.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\DB\ProductDAO.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\src\main\java\Control\ControlWeb\Send.java
