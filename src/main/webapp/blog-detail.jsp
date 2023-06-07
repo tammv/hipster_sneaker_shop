@@ -9,9 +9,17 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.png" />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,19 +28,43 @@
       referrerpolicy="no-referrer"
     />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/iconic/css/material-design-iconic-font.min.css"
+    />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/linearicons-v1.0.0/icon-font.min.css"
+    />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animsition/css/animsition.min.css"
+    />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/perfect-scrollbar/perfect-scrollbar.css"
+    />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -61,7 +93,9 @@
           <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
         </a>
 
-        <span class="stext-109 cl4"> 8 Inspiring Ways to Wear Dresses in the Winter </span>
+        <span class="stext-109 cl4">
+          Never Done Iterating
+        </span>
       </div>
     </div>
 
@@ -73,12 +107,12 @@
             <div class="p-r-45 p-r-0-lg">
               <!--  -->
               <div class="wrap-pic-w how-pos5-parent">
-                <img src="images/blog-04.jpg" alt="IMG-BLOG" />
+                <img src="images/blog-01.jpg" alt="IMG-BLOG" />
 
                 <div class="flex-col-c-m size-123 bg9 how-pos5">
-                  <span class="ltext-107 cl2 txt-center"> 22 </span>
+                  <span class="ltext-107 cl2 txt-center"> 4 </span>
 
-                  <span class="stext-109 cl3 txt-center"> Jan 2018 </span>
+                  <span class="stext-109 cl3 txt-center"> June 2023 </span>
                 </div>
               </div>
 
@@ -90,36 +124,44 @@
                   </span>
 
                   <span>
-                    22 Jan, 2018
+                    4 June, 2023
                     <span class="cl12 m-l-4 m-r-6">|</span>
                   </span>
 
                   <span>
-                    StreetStyle, Fashion, Couple
-                    <span class="cl12 m-l-4 m-r-6">|</span>
+                    StreetStyle, Fashion, New
+                    <span class="cl12 m-l-4 m-r-6"></span>
                   </span>
-
-                  <span> 8 Comments </span>
                 </span>
 
-                <h4 class="ltext-109 cl2 p-b-28">8 Inspiring Ways to Wear Dresses in the Winter</h4>
+                <h4 class="ltext-109 cl2 p-b-28">
+                  Never Done Iterating
+                </h4>
 
                 <p class="stext-117 cl6 p-b-26">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet est vel orci luctus
-                  sollicitudin. Duis eleifend vestibulum justo, varius semper lacus condimentum dictum. Donec pulvinar a
-                  magna ut malesuada. In posuere felis diam, vel sodales metus accumsan in. Duis viverra dui eu pharetra
-                  pellentesque. Donec a eros leo. Quisque sed ligula vitae lorem efficitur faucibus. Praesent sit amet
-                  imperdiet ante. Nulla id tellus auctor, dictum libero a, malesuada nisi. Nulla in porta nibh, id
-                  vestibulum ipsum. Praesent dapibus tempus erat quis aliquet. Donec ac purus id sapien condimentum
-                  feugiat.
+                  Nike Dunk Low Next Nature is a groundbreaking sneaker that
+                  seamlessly blends urban style with elements inspired by the
+                  natural world. Its design takes cues from the beauty of
+                  nature, incorporating earthy tones and sustainable materials
+                  like recycled polyester. The shoe features innovative design
+                  elements, including a leaf-inspired pattern on the Swoosh logo
+                  and a rugged outsole for added traction. Comfort and
+                  performance are not compromised, with a cushioned midsole
+                  providing support and impact absorption. The Dunk Low Next
+                  Nature encourages wearers to embrace exploration and find
+                  inspiration in the outdoors. It represents the perfect fusion
+                  of style, sustainability, and the spirit of adventure.
                 </p>
 
                 <p class="stext-117 cl6 p-b-26">
-                  Praesent vel mi bibendum, finibus leo ac, condimentum arcu. Pellentesque sem ex, tristique sit amet
-                  suscipit in, mattis imperdiet enim. Integer tempus justo nec velit fringilla, eget eleifend neque
-                  blandit. Sed tempor magna sed congue auctor. Mauris eu turpis eget tortor ultricies elementum.
-                  Phasellus vel placerat orci, a venenatis justo. Phasellus faucibus venenatis nisl vitae vestibulum.
-                  Praesent id nibh arcu. Vivamus sagittis accumsan felis, quis vulputate
+                  The Nike Dunk Low Next Nature is more than just a sneaker;
+                  it's a testament to the harmonious relationship between urban
+                  lifestyle and the great outdoors. Through its nature-inspired
+                  design, sustainable materials, and performance-driven
+                  features, this shoe embodies the spirit of adventure and
+                  invites wearers to connect with the world around them. Step
+                  into the Nike Dunk Low Next Nature and embark on a journey of
+                  style, comfort, and exploration.
                 </p>
               </div>
 
@@ -127,12 +169,18 @@
                 <span class="size-216 stext-116 cl8 p-t-4"> Tags </span>
 
                 <div class="flex-w size-217">
-                  <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
                     Streetstyle
                   </a>
 
-                  <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-                    Crafts
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    New
                   </a>
                 </div>
               </div>
@@ -142,7 +190,8 @@
                 <h5 class="mtext-113 cl2 p-b-12">Leave a Comment</h5>
 
                 <p class="stext-107 cl6 p-b-40">
-                  Your email address will not be published. Required fields are marked *
+                  Your email address will not be published. Required fields are
+                  marked *
                 </p>
 
                 <form>
@@ -155,18 +204,25 @@
                   </div>
 
                   <div class="bor19 size-218 m-b-20">
-                    <input class="stext-111 cl2 plh3 size-116 p-lr-18" type="text" name="name" placeholder="Name *" />
+                    <input
+                      class="stext-111 cl2 plh3 size-116 p-lr-18"
+                      type="text"
+                      name="name"
+                      placeholder="Name *"
+                    />
                   </div>
 
                   <div class="bor19 size-218 m-b-20">
-                    <input class="stext-111 cl2 plh3 size-116 p-lr-18" type="text" name="email" placeholder="Email *" />
+                    <input
+                      class="stext-111 cl2 plh3 size-116 p-lr-18"
+                      type="text"
+                      name="email"
+                      placeholder="Email *"
+                    />
                   </div>
-
-                  <div class="bor19 size-218 m-b-30">
-                    <input class="stext-111 cl2 plh3 size-116 p-lr-18" type="text" name="web" placeholder="Website" />
-                  </div>
-
-                  <button class="flex-c-m stext-101 cl0 size-125 bg3 bor2 hov-btn3 p-lr-15 trans-04">
+                  <button
+                    class="flex-c-m stext-101 cl0 size-125 bg3 bor2 hov-btn3 p-lr-15 trans-04"
+                  >
                     Post Comment
                   </button>
                 </form>
@@ -184,7 +240,9 @@
                   placeholder="Search"
                 />
 
-                <button class="flex-c-m size-122 ab-t-r fs-18 cl4 hov-cl1 trans-04">
+                <button
+                  class="flex-c-m size-122 ab-t-r fs-18 cl4 hov-cl1 trans-04"
+                >
                   <i class="zmdi zmdi-search"></i>
                 </button>
               </div>
@@ -194,134 +252,47 @@
 
                 <ul>
                   <li class="bor18">
-                    <a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"> Fashion </a>
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Fashion
+                    </a>
                   </li>
 
                   <li class="bor18">
-                    <a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"> Beauty </a>
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Beauty
+                    </a>
                   </li>
 
                   <li class="bor18">
-                    <a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"> Street Style </a>
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Street Style
+                    </a>
                   </li>
 
                   <li class="bor18">
-                    <a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"> Life Style </a>
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Life Style
+                    </a>
                   </li>
 
                   <li class="bor18">
-                    <a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"> DIY & Crafts </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="p-t-65">
-                <h4 class="mtext-112 cl2 p-b-33">Featured Products</h4>
-
-                <ul>
-                  <li class="flex-w flex-t p-b-30">
-                    <a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
-                      <img src="images/product-min-01.jpg" alt="PRODUCT" />
-                    </a>
-
-                    <div class="size-215 flex-col-t p-t-8">
-                      <a href="#" class="stext-116 cl8 hov-cl1 trans-04"> White Shirt With Pleat Detail Back </a>
-
-                      <span class="stext-116 cl6 p-t-20"> $19.00 </span>
-                    </div>
-                  </li>
-
-                  <li class="flex-w flex-t p-b-30">
-                    <a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
-                      <img src="images/product-min-02.jpg" alt="PRODUCT" />
-                    </a>
-
-                    <div class="size-215 flex-col-t p-t-8">
-                      <a href="#" class="stext-116 cl8 hov-cl1 trans-04"> Converse All Star Hi Black Canvas </a>
-
-                      <span class="stext-116 cl6 p-t-20"> $39.00 </span>
-                    </div>
-                  </li>
-
-                  <li class="flex-w flex-t p-b-30">
-                    <a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
-                      <img src="images/product-min-03.jpg" alt="PRODUCT" />
-                    </a>
-
-                    <div class="size-215 flex-col-t p-t-8">
-                      <a href="#" class="stext-116 cl8 hov-cl1 trans-04"> Nixon Porter Leather Watch In Tan </a>
-
-                      <span class="stext-116 cl6 p-t-20"> $17.00 </span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="p-t-55">
-                <h4 class="mtext-112 cl2 p-b-20">Archive</h4>
-
-                <ul>
-                  <li class="p-b-7">
-                    <a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                      <span> July 2018 </span>
-
-                      <span> (9) </span>
-                    </a>
-                  </li>
-
-                  <li class="p-b-7">
-                    <a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                      <span> June 2018 </span>
-
-                      <span> (39) </span>
-                    </a>
-                  </li>
-
-                  <li class="p-b-7">
-                    <a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                      <span> May 2018 </span>
-
-                      <span> (29) </span>
-                    </a>
-                  </li>
-
-                  <li class="p-b-7">
-                    <a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                      <span> April 2018 </span>
-
-                      <span> (35) </span>
-                    </a>
-                  </li>
-
-                  <li class="p-b-7">
-                    <a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                      <span> March 2018 </span>
-
-                      <span> (22) </span>
-                    </a>
-                  </li>
-
-                  <li class="p-b-7">
-                    <a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                      <span> February 2018 </span>
-
-                      <span> (32) </span>
-                    </a>
-                  </li>
-
-                  <li class="p-b-7">
-                    <a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                      <span> January 2018 </span>
-
-                      <span> (21) </span>
-                    </a>
-                  </li>
-
-                  <li class="p-b-7">
-                    <a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                      <span> December 2017 </span>
-
-                      <span> (26) </span>
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      DIY & Crafts
                     </a>
                   </li>
                 </ul>
@@ -331,24 +302,39 @@
                 <h4 class="mtext-112 cl2 p-b-27">Tags</h4>
 
                 <div class="flex-w m-r--5">
-                  <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
                     Fashion
                   </a>
 
-                  <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-                    Lifestyle
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Comfortable
                   </a>
 
-                  <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-                    Denim
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    New
                   </a>
 
-                  <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
                     Streetstyle
                   </a>
 
-                  <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-                    Crafts
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Trending
                   </a>
                 </div>
               </div>
@@ -375,7 +361,9 @@
               </li>
 
               <li class="p-b-10">
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Converse </a>
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Converse
+                </a>
               </li>
 
               <li class="p-b-10">
@@ -392,11 +380,15 @@
 
             <ul>
               <li class="p-b-10">
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Track Order </a>
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Track Order
+                </a>
               </li>
 
               <li class="p-b-10">
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Shipping </a>
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Shipping
+                </a>
               </li>
 
               <li class="p-b-10">
@@ -409,22 +401,31 @@
             <h4 class="stext-301 cl0 p-b-30">GET IN TOUCH</h4>
 
             <p class="stext-107 cl7 size-201">
-              Any questions? Let us know in store at 8th floor, 379 Ngu Hanh Son Da Nang or call us on
+              FPT University Da Nang, Urban area FPT City, Ngu Hanh Son, Da Nang
             </p>
-            <p>012931233</p>
+            <p>0947481545</p>
           </div>
           <div class="col-sm-6 col-lg-3 p-b-50">
             <h4 class="stext-301 cl0 p-b-30">Subscribe</h4>
             <div class="p-t-27">
-              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+              <a
+                href="https://www.facebook.com/hipsterstore"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
                 <i class="fa-brands fa-facebook"></i>
               </a>
 
-              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+              <a
+                href="https://www.instagram.com"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
                 <i class="fa-brands fa-instagram"></i>
               </a>
 
-              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+              <a
+                href="https://www.tiktok.com"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
                 <i class="fa-brands fa-tiktok"></i>
               </a>
             </div>
