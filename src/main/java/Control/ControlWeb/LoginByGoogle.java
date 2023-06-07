@@ -9,6 +9,7 @@ import org.apache.http.client.fluent.Request;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
+import Control.DB.CartDAO;
 import Control.DB.UserDAO;
 import Model.Account_Google;
 import Model.Account_SignUp;
@@ -34,6 +35,7 @@ public class LoginByGoogle extends HttpServlet {
 		Account_Google acc = getUserInfo(accessToken);
 		if (!new UserDAO().checkEmail(acc)){
 			new UserDAO().insertAccgmail(acc);
+			new CartDAO().insertCartTable(acc.getEmail());
 		}
 		
 		
@@ -72,7 +74,7 @@ public class LoginByGoogle extends HttpServlet {
 			e.printStackTrace();
 		}
 
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("Home.html");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.html");
 		requestDispatcher.forward(request, response);
 	}
 }

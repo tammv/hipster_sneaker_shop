@@ -3,6 +3,7 @@ package Control.ControlWeb;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import Control.DB.CartDAO;
 import Control.DB.UserDAO;
 import Model.Account_SignUp;
 import jakarta.servlet.ServletException;
@@ -20,6 +21,7 @@ public class processLink extends HttpServlet {
         Account_SignUp  acc = new Account_SignUp(username, password, email);
         try {
             new UserDAO().insertUserTable(acc);
+            new CartDAO().insertCartTable(username);
             req.setAttribute("nofication_in", "1");
             req.getRequestDispatcher("Login_SignUp.jsp").forward(req, resp);
         } catch (ClassNotFoundException | SQLException e) {

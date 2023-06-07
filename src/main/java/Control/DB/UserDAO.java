@@ -44,7 +44,7 @@ public class UserDAO {
     }
 
     public void insertAccgmail(Account_Google acc) throws ClassNotFoundException, SQLException {
-        String query = "Insert into User_Table(username, role, email , fullname , created_at, update_at ) Values (?, ? ,? , ? ,? ,? )";
+        String query = "Insert into User_Table(username, role, email , fullname , created_at, update_at , password ) Values (?, ? ,? , ? ,? ,? , ?)";
         conn = DBconnect.makeConnection();
         Date currentDate = new Date();
 
@@ -57,6 +57,7 @@ public class UserDAO {
         ps.setString(4, acc.getName());
         ps.setDate(5, sqlDate);
         ps.setDate(6, sqlDate);
+        ps.setString(7, "88888888888888");
         try {
             ps.executeUpdate();
             
@@ -73,7 +74,7 @@ public class UserDAO {
         ps = conn.prepareStatement(query);
         rs = ps.executeQuery();
         while(rs.next()){
-            if(rs.getString(1).equals(acc.getUsername()) || rs.getString(2).equals(acc.getEmail())){
+            if(rs.getString(1).equalsIgnoreCase(acc.getUsername()) || rs.getString(2).equalsIgnoreCase(acc.getEmail())){
                 return true;
             }
         }
@@ -86,7 +87,7 @@ public class UserDAO {
         ps = conn.prepareStatement(query);
         rs = ps.executeQuery();
         while(rs.next()){
-            if (rs.getString(1).equals(acc.getEmail())){
+            if (rs.getString(1).equalsIgnoreCase(acc.getEmail())){
                 return true;
             }
         }

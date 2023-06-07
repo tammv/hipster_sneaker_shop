@@ -5,6 +5,7 @@ import java.sql.Date;
 public class Product {
     private int product_id;
     private String product_name;
+    private String brand;
     private String prouduct_description;
     private float profit_price;
     private String img;
@@ -12,10 +13,11 @@ public class Product {
     private Date created_at;
     private Date update_at;
 
-    public Product(int product_id, String product_name, String prouduct_description, float profit_price, String img,
+    public Product(int product_id, String product_name,String brand ,String prouduct_description, float profit_price, String img,
             int quantity, Date created_at, Date update_at) {
         this.product_id = product_id;
         this.product_name = product_name;
+        this.brand = brand;
         this.prouduct_description = prouduct_description;
         this.profit_price = profit_price;
         this.img = img;
@@ -24,7 +26,14 @@ public class Product {
         this.update_at = update_at;
     }
 
+    public String getBrand() {
+        return brand;
+    }
 
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
     public int getProduct_id() {
         return product_id;
     }

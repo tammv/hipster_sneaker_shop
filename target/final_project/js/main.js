@@ -215,13 +215,27 @@
     /*==================================================================
     [ +/- num product ]*/
     $('.btn-num-product-down').on('click', function(){
+        var input = $(this).next();
+        var row = input.closest('.table_row');
+        var column3 = parseFloat(row.find('.column-3').text());
+        var column5 = row.find('.column-5');
         var numProduct = Number($(this).next().val());
-        if(numProduct > 0) $(this).next().val(numProduct - 1);
+        if(numProduct > 0) {
+            $(this).next().val(numProduct - 1);
+            column5 = column3 * $(this).next().val();
+
+        };
     });
 
     $('.btn-num-product-up').on('click', function(){
-        var numProduct = Number($(this).prev().val());
+        var input = $(this).next();
+        var row = input.closest('.table_row');
+        var column3 = parseFloat(row.find('.column-3').text());
+        var column5 = row.find('.column-5');
+        var numProduct = Number($(this).next().val());
         $(this).prev().val(numProduct + 1);
+        column5 = column3 * $(this).next().val();
+
     });
 
     /*==================================================================
