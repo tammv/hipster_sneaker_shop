@@ -45,15 +45,15 @@
     <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg')">
       <h2 class="ltext-105 cl0 txt-center">Contact</h2>
     </section>
-
-    <!-- Content page -->
-    <section class="bg0 p-t-104 p-b-116">
+    <div class="row">
+         <!-- Content page -->
+    <section class="bg0 p-t-104 p-b-116 col-6">
       <div class="container">
         <div class="flex-w flex-tr">
     
           </div>
 
-          <div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
+          <div class="size-100 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
             <div class="flex-w w-full p-b-42">
               <span class="fs-18 cl5 txt-center size-211">
                 
@@ -64,7 +64,7 @@
                 <span class="mtext-110 cl2"> Address </span>
 
                 <p class="stext-115 cl6 size-213 p-t-18">
-                  Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
+                   FPT City, Phường Hòa Hải, Quận Ngũ Hành Sơn, TP Đà Nẵng, Da Nang, Vietnam
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@
               <div class="size-212 p-t-2">
                 <span class="mtext-110 cl2"> Sale Support </span>
 
-                <p class="stext-115 cl1 size-213 p-t-18">contact@example.com</p>
+                <p class="stext-115 cl1 size-213 p-t-18">hipster358@gmail.com</p>
               </div>
             </div>
           </div>
@@ -98,18 +98,11 @@
     </section>
 
     <!-- Map -->
-    <div class="map">
-      <div
-        class="size-303"
-        id="google_map"
-        data-map-x="40.691446"
-        data-map-y="-73.886787"
-        data-pin="images/icons/pin.png"
-        data-scrollwhell="0"
-        data-draggable="1"
-        data-zoom="11"
-      ></div>
+    <div class="map col-6">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30685.43758829658!2d108.28586226467363!3d15.978094676916518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108cc9483389%3A0xaa6900daa03e0d17!2zS2h1IMSRw7QgdGjhu4sgRlBUIENpdHksIEjDsmEgSOG6o2ksIE5nxakgSMOgbmggU8ahbiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1685928621896!5m2!1svi!2s" width="550" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    </div>
+   
 
     <!-- Footer -->
     <footer class="bg3 p-t-75 p-b-32">
