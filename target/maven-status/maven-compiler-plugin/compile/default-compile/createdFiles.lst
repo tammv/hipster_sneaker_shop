@@ -16,6 +16,7 @@ Model\Cart.class
 Model\Constants.class
 Model\Product.class
 Control\ControlWeb\LoginByGoogle.class
+Control\ControlWeb\UpdateCart.class
 Model\Product_Cart.class
 Control\ControlWeb\Delete.class
 Control\ControlWeb\Send$2.class
