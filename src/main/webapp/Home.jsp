@@ -237,7 +237,9 @@
             <p class="stext-107 cl7 size-201">
               FPT University Da Nang, Urban area FPT City, Ngu Hanh Son, Da Nang
             </p>
+            
             <p>0947481545</p>
+          
           </div>
           <div class="col-sm-6 col-lg-3 p-b-50">
             <h4 class="stext-301 cl0 p-b-30">Subscribe</h4>
@@ -246,7 +248,7 @@
                 <i class="fa-brands fa-facebook"></i>
               </a>
 
-              <a href="https://www.instagram.com" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+              <a href="https://www.instagram.com/thehipsterhouse/" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                 <i class="fa-brands fa-instagram"></i>
               </a>
 

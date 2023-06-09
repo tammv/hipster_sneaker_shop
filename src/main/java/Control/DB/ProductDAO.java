@@ -10,7 +10,9 @@ import java.util.List;
 import Model.Product;
 
 public class ProductDAO {
-    Connection conn;
+
+   
+    public Connection conn;
     PreparedStatement ps;
     ResultSet rs;
 
@@ -43,3 +45,5 @@ public class ProductDAO {
         return null;
     }
 }
+   
+
