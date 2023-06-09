@@ -7,18 +7,16 @@ import java.sql.SQLException;
 public class DBconnect {
 
     public static Connection makeConnection() throws ClassNotFoundException {
-        String namedatabase = "Final_Project";
         try {
+            String url = "jdbc:sqlserver://localhost:0;encrypt=true;databaseName=Final_Project;trustServerCertificate=true";
+            String username = "sa";
+            String password = "123456789";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String connectionUrl = "jdbc:sqlserver://MSI\\SQLEXPRESS:1433;databaseName=" + namedatabase + "; Encrypt=false;";
-            String user = "sa";
-            String password = "123456";
-            Connection con = DriverManager.getConnection(connectionUrl, user, password);
+            Connection con = DriverManager.getConnection(url, username, password);
             return con;
-        } catch (Exception e) {
-
-            e.printStackTrace();
+        } catch (SQLException e) {
+            e.getMessage();
+            return null;
         }
-        return null;
     }
 }

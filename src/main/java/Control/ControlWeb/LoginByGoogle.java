@@ -10,9 +10,11 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 import Control.DB.CartDAO;
+import Control.DB.CartUserDAO;
 import Control.DB.UserDAO;
 import Model.Account_Google;
 import Model.Account_SignUp;
+import Model.Cart;
 import Model.Constants;
 
 import jakarta.servlet.RequestDispatcher;
@@ -21,6 +23,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import org.apache.http.client.ClientProtocolException;
 
 
@@ -28,15 +32,23 @@ import org.apache.http.client.ClientProtocolException;
 @WebServlet(urlPatterns = {"/GoogleLogin"})
 public class LoginByGoogle extends HttpServlet {
     
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    protected void processRequest(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException, ClassNotFoundException, SQLException {
-		String code = request.getParameter("code");
+		String code = req.getParameter("code");
 		String accessToken = getToken(code);
 		Account_Google acc = getUserInfo(accessToken);
 		if (!new UserDAO().checkEmail(acc)){
 			new UserDAO().insertAccgmail(acc);
 			new CartDAO().insertCartTable(acc.getEmail());
 		}
+		HttpSession session = req.getSession();
+		session.setAttribute("user", acc.getEmail());
+
+		Cart cart = new Cart( );
+		int cart_id = new CartDAO().getCartId(acc.getEmail());
+		cart.setCartId(cart_id);
+		cart.setList_product(new CartUserDAO().getListProductInCart(cart_id));
+		session.setAttribute("cart_user", cart);
 		
 		
 	}
@@ -74,7 +86,7 @@ public class LoginByGoogle extends HttpServlet {
 			e.printStackTrace();
 		}
 
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.html");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("Home.jsp");
 		requestDispatcher.forward(request, response);
 	}
 }

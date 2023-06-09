@@ -1,8 +1,10 @@
 package Control.ControlWeb;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
+import Control.DB.CartUserDAO;
 import Model.Cart;
 import Model.Product_Cart;
 import jakarta.servlet.ServletException;
@@ -29,7 +31,13 @@ public class UpdateCart  extends HttpServlet{
             product_Car.setQuantity(quantity);
             product_Car.setSize(size);
         }
-        cart.setList_product(list);
+        try {
+            new CartUserDAO().editCart(cart);
+            cart.setList_product(new CartUserDAO().getListProductInCart(cart.getCartId()));          
+        } catch (ClassNotFoundException | SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         session.setAttribute("cart_user", cart);
         resp.sendRedirect("shoping-cart.jsp");
     }
