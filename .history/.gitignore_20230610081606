@@ -23,6 +23,5 @@
 hs_err_pid*
 replay_pid*
 
-
+*\.src\main\java\Control\DB\DBconnect.java
 D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\target
-/src/main/java/Control/DB/DBconnect.java
