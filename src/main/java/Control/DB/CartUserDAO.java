@@ -88,7 +88,9 @@ public class CartUserDAO {
     public void editCart(Cart cart) throws  ClassNotFoundException, SQLException {
         deleteAll(cart.getCartId());
         for (Product_Cart product_Cart : cart.getList_product()) {
-            insertProduct(cart.getCartId(), product_Cart.getProduct().getProduct_id(), product_Cart.getQuantity(), product_Cart.getSize());
+            if(product_Cart.getQuantity()!=0){
+                insertProduct(cart.getCartId(), product_Cart.getProduct().getProduct_id(), product_Cart.getQuantity(), product_Cart.getSize());
+            }
         }
     }
 

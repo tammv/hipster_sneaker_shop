@@ -3524,3 +3524,14 @@ input.num-product::-webkit-inner-spin-button {
     padding: 20px;
   }
 }
+.table_row.selected {
+  background-color:#c9cffb;
+  color: white;
+}
+.table_row{
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.table_row:hover{
+  background-color:#d9ddf6 ;
+}
