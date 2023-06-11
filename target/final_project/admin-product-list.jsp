@@ -1,3 +1,9 @@
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" 
+    prefix="fn" %> 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
@@ -8,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="admin/img/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="admin/img/favicon.ico" />
     <!-- Google Fonts
 		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet" />
@@ -55,37 +61,30 @@
     <!-- style CSS
 		============================================ -->
     <link rel="stylesheet" href="admin/style.css" />
+    
+    <link rel="stylesheet" href="css/product-list.css" />
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="admin/css/responsive.css" />
     <!-- modernizr JS
 		============================================ -->
-    <script src="admin/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
 
   <body>
+      
     <div class="left-sidebar-pro">
       <nav id="sidebar" class>
         <div class="sidebar-header">
-          <a href="#"><img class="main-logo" src="admin/img/logo/logo.png" alt /></a>
-          <strong><img src="admin/img/logo/logosn.png" alt /></strong>
+          <a href="index.html"><img class="main-logo" src="admin/img/logo/logo.png" alt /></a>
+<!--          <strong><img src="admin/img/logo/logosn.png" alt /></strong>-->
         </div>
         <div class="nalika-profile">
           <div class="profile-dtl">
             <a href="#"><img src="admin/img/notification/4.jpg" alt /></a>
-            <h2>HIPTERS STORE</h2>
+            <h2>HIPSTER STORE</h2>
           </div>
-          <!-- <div class="profile-social-dtl">
-              <ul class="dtl-social">
-                <li>
-                  <a href="#"><i class="icon nalika-facebook"></i></a>
-                </li>
-              
-                <li>
-                  <a href="#"><i class="icon nalika-linkedin"></i></a>
-                </li>
-              </ul>
-            </div> -->
+
         </div>
         <div class="left-custom-menu-adp-wrap comment-scrollbar">
           <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -109,12 +108,10 @@
                 </a>
                 <ul class="submenu-angle" aria-expanded="true">
                   <li>
-                    <a title="Product List" href="admin-product-edit.html"
-                      ><span class="mini-sub-pro">Products List</span></a
-                    >
+                    <a title="Product List" href="#"><span class="mini-sub-pro">Products List</span></a>
                   </li>
                   <li>
-                    <a title="Product List" href="#"><span class="mini-sub-pro">Add Product</span></a>
+                    <a title="Product List" href="sa-addProduct.jsp"><span class="mini-sub-pro">Add Product</span></a>
                   </li>
                 </ul>
               </li>
@@ -169,7 +166,7 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="logo-pro">
-              <a href="#"><img class="main-logo" src="img/logo/logo.png" alt /></a>
+              <a href="#"><img class="main-logo" src="admin/img/logo/logo.png" alt /></a>
             </div>
           </div>
         </div>
@@ -260,7 +257,7 @@
                         ></a>
                         <ul class="collapse dropdown-header-top">
                           <li><a href="#">Products List</a></li>
-                          <li><a href="#">Add Product</a></li>
+                          <li><a href="sa-addProduct.jsp">Add Product</a></li>
                         </ul>
                       </li>
                       <li>
@@ -335,6 +332,58 @@
           </div>
         </div>
       </div>
+ 
+    
+    <div class="board" style="background: #ffffff; font-weight: bolder ">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>SKU</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+       
+        <tbody>
+            
+            <c:forEach var="p" items="${list}" >
+        
+            <tr>
+                <td class="item">
+                    <img src="${p.img}" alt="">
+                    <div class="item-de">
+                       <h5>${p.product_id}</h5>
+                        <p>Created Date: ${p.created_at}</p>
+                    </div>
+                </td>
+
+                <td class="item-des">
+                    <h5>${p.product_name}</h5>
+                    <p>${p.brand}</p>
+                </td>
+
+                <td class="active"><p>$${p.profit_price} </p></td>
+
+                <td class="role">
+                    <p>${p.quantity}</p>
+                </td>
+
+                <td class="edit"><a href="updateProduct?product_id=${p.product_id}">Edit</a></td>
+                <td class="delete"><a href="delete?product_id=${p.product_id}">Delete</a></td>
+            </tr> 
+
+            </c:forEach>
+        </tbody>
+    </table>
+
+</div>
+          </form>
+   
+      
+
       <div class="footer-copyright-area">
         <div class="container-fluid">
           <div class="row">
@@ -399,5 +448,8 @@
     <!-- main JS
 		============================================ -->
     <script src="admin/js/main.js"></script>
+    
+    
+  
   </body>
 </html>
