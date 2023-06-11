@@ -1,9 +1,4 @@
 
-<%-- 
-    Document   : product-list
-    Created on : Jun 7, 2023, 5:26:22 PM
-    Author     : ASUS
---%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" 
@@ -116,7 +111,7 @@
                     <a title="Product List" href="#"><span class="mini-sub-pro">Products List</span></a>
                   </li>
                   <li>
-                    <a title="Product List" href="#"><span class="mini-sub-pro">Add Product</span></a>
+                    <a title="Product List" href="sa-addProduct.jsp"><span class="mini-sub-pro">Add Product</span></a>
                   </li>
                 </ul>
               </li>
@@ -262,7 +257,7 @@
                         ></a>
                         <ul class="collapse dropdown-header-top">
                           <li><a href="#">Products List</a></li>
-                          <li><a href="#">Add Product</a></li>
+                          <li><a href="sa-addProduct.jsp">Add Product</a></li>
                         </ul>
                       </li>
                       <li>
