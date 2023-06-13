@@ -265,7 +265,7 @@
               </a>
 
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/thehipsterhouse/"
                 class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
               >
                 <i class="fa-brands fa-instagram"></i>
