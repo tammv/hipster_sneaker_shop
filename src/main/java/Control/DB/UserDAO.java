@@ -17,22 +17,9 @@ public class UserDAO {
     PreparedStatement ps;
     ResultSet rs;
 
-    public void editProfile(String email, String name, String address, String username) throws SQLException, ClassNotFoundException{
-        try {
-            String query = "UPDATE [dbo].[User_Table] SET [email] = ?,[fullname] = ?,[address] = ? WHERE [username]=?";
-            conn = DBconnect.makeConnection();
-            ps = conn.prepareStatement(query);
-            ps.setString(1, email);
-            ps.setString(2, name);
-            ps.setString(3, address);
-            ps.setString(4, username);
-            ps.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
 
-    public void insertUserTable(Account_SignUp acc) throws ClassNotFoundException, SQLException {
+    public void insertUserTable(Account_SignUp acc) throws  ClassNotFoundException, SQLException{
+        
 
         String query = "Insert into User_Table (username, password, role , email , created_at, update_at) Values (?, ? ,?, ?, ? ,?)";
         conn = DBconnect.makeConnection();
@@ -49,15 +36,15 @@ public class UserDAO {
         ps.setDate(6, sqlDate);
         try {
             ps.executeUpdate();
-
+            
         } catch (SQLException e) {
-
+            
         }
 
     }
 
     public void insertAccgmail(Account_Google acc) throws ClassNotFoundException, SQLException {
-        String query = "Insert into User_Table(username, role, email , fullname , created_at, update_at ) Values (?, ? ,? , ? ,? ,? )";
+        String query = "Insert into User_Table(username, role, email , fullname , created_at, update_at , password ) Values (?, ? ,? , ? ,? ,? , ?)";
         conn = DBconnect.makeConnection();
         Date currentDate = new Date();
 
@@ -70,61 +57,63 @@ public class UserDAO {
         ps.setString(4, acc.getName());
         ps.setDate(5, sqlDate);
         ps.setDate(6, sqlDate);
+        ps.setString(7, "88888888888888");
         try {
             ps.executeUpdate();
-
+            
         } catch (SQLException e) {
-
+            
+            
         }
-
+        
     }
 
-    public boolean checkEmailAndUsername(Account_SignUp acc) throws SQLException, ClassNotFoundException {
+    public boolean checkEmailAndUsername(Account_SignUp acc) throws SQLException, ClassNotFoundException{
         String query = "Select username , email From User_Table";
         conn = DBconnect.makeConnection();
         ps = conn.prepareStatement(query);
         rs = ps.executeQuery();
-        while (rs.next()) {
-            if (rs.getString(1).equals(acc.getUsername()) || rs.getString(2).equals(acc.getEmail())) {
+        while(rs.next()){
+            if(rs.getString(1).equalsIgnoreCase(acc.getUsername()) || rs.getString(2).equalsIgnoreCase(acc.getEmail())){
                 return true;
             }
         }
         return false;
     }
 
-    public boolean checkEmail(Account_Google acc) throws SQLException, ClassNotFoundException {
+    public boolean checkEmail(Account_Google acc) throws SQLException, ClassNotFoundException{
         String query = "Select email From User_Table";
         conn = DBconnect.makeConnection();
         ps = conn.prepareStatement(query);
         rs = ps.executeQuery();
-        while (rs.next()) {
-            if (rs.getString(1).equals(acc.getEmail())) {
+        while(rs.next()){
+            if (rs.getString(1).equalsIgnoreCase(acc.getEmail())){
                 return true;
             }
         }
         return false;
     }
 
-    public List<Account_SignUp> getListAcc() throws SQLException, ClassNotFoundException {
+    public List<Account_SignUp> getListAcc() throws SQLException, ClassNotFoundException{
         String query = "Select username , password , email From User_Table";
         conn = DBconnect.makeConnection();
         ps = conn.prepareStatement(query);
-        rs = ps.executeQuery();
-        List<Account_SignUp> list = new ArrayList<>();
-        while (rs.next()) {
+        rs= ps.executeQuery();
+        List<Account_SignUp> list = new ArrayList<>()  ;
+        while(rs.next()){
             list.add(new Account_SignUp(rs.getString(1), rs.getString(2), rs.getString(3)));
         }
         return list;
     }
 
-    public boolean checkEmail(String email) throws SQLException, ClassNotFoundException {
+    public boolean checkEmail(String email) throws SQLException, ClassNotFoundException{
         String query = "Select email From User_Table";
         conn = DBconnect.makeConnection();
         ps = conn.prepareStatement(query);
         rs = ps.executeQuery();
-        while (rs.next()) {
-            if (rs.getString(1).equalsIgnoreCase(email)) {
-
+        while(rs.next()){
+            if (rs.getString(1).equalsIgnoreCase(email)){
+                
                 return true;
             }
         }
@@ -141,7 +130,7 @@ public class UserDAO {
         ps = conn.prepareStatement(query);
         ps.setString(1, newpass);
         ps.setDate(2, sqlDate);
-        ps.setString(3, email);
+        ps.setString(3  , email);
         ps.executeUpdate();
 
     }
@@ -152,10 +141,26 @@ public class UserDAO {
         ps = conn.prepareStatement(query);
         ps.setString(1, emailnusername);
         rs = ps.executeQuery();
-        while (rs.next()) {
+        while(rs.next()){
             return rs.getString(1);
         }
         return null;
     }
 
+    public void editProfile(String email, String name, String address, String username) throws SQLException, ClassNotFoundException{
+        try {
+            String query = "UPDATE [dbo].[User_Table] SET [email] = ?,[fullname] = ?,[address] = ? WHERE [username]=?";
+            conn = DBconnect.makeConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, email);
+            ps.setString(2, name);
+            ps.setString(3, address);
+            ps.setString(4, username);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
+

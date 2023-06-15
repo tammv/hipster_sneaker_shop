@@ -215,14 +215,28 @@
     /*==================================================================
     [ +/- num product ]*/
     $('.btn-num-product-down').on('click', function(){
-        var numProduct = Number($(this).next().val());
-        if(numProduct > 0) $(this).next().val(numProduct - 1);
-    });
-
-    $('.btn-num-product-up').on('click', function(){
-        var numProduct = Number($(this).prev().val());
-        $(this).prev().val(numProduct + 1);
-    });
+        var input = $(this).next();
+        var row = input.closest('.table_row');
+        var column3 = parseFloat(row.find('.price_product').text());
+        var column5 = row.find('.column-5');
+        var numProduct = Number(input.val());
+        
+        if (numProduct > 0) {
+          input.val(numProduct - 1);
+          column5.text((column3 * (numProduct - 1)).toFixed(2)+"$");
+        }
+      });
+      
+      $('.btn-num-product-up').on('click', function(){
+        var input = $(this).prev();
+        var row = input.closest('.table_row');
+        var column3 = parseFloat(row.find('.price_product').text());
+        var column5 = row.find('.column-5');
+        var numProduct = Number(input.val());
+        
+        input.val(numProduct + 1);
+        column5.text((column3 * (numProduct + 1)).toFixed(2)+"$");
+      });
 
     /*==================================================================
     [ Rating ]*/

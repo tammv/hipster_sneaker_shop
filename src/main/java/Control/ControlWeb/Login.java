@@ -4,10 +4,11 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-
-
+import Control.DB.CartDAO;
+import Control.DB.CartUserDAO;
 import Control.DB.UserDAO;
 import Model.Account_SignUp;
+import Model.Cart;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
@@ -32,9 +33,14 @@ public class Login extends HttpServlet{
                     cookie.setMaxAge(3000);
                     resp.addCookie(cookie);
                 }
-                HttpSession session = req.getSession(true);
-                System.out.println(username);
+                HttpSession session = req.getSession();
                 session.setAttribute("user", username);
+
+                Cart cart = new Cart( );
+                int cart_id = new CartDAO().getCartId(username);
+                cart.setCartId(cart_id);
+                cart.setList_product(new CartUserDAO().getListProductInCart(cart_id));
+                session.setAttribute("cart_user", cart);
                 check = true;
                 break;
             }
@@ -46,7 +52,7 @@ public class Login extends HttpServlet{
         }
 
         if (check){
-            resp.sendRedirect("index.html");
+            resp.sendRedirect("Home.jsp");
         }
         else{
 

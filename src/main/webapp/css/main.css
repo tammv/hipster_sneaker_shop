@@ -904,7 +904,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .header-cart {
   position: fixed;
   z-index: 1100;
-  width: 390px;
+  width: 400px;
   max-width: calc(100% - 30px);
   height: 100vh;
   top: 0;
@@ -958,6 +958,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   flex-grow: 1;
 }
 
+
+
 /*---------------------------------------------*/
 .header-cart-item-img {
   width: 60px;
@@ -970,38 +972,29 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   width: 100%;
 }
 
-.header-cart-item-img::after {
-  content: "\e870";
-  font-family: Linearicons-Free;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  opacity: 0;
-}
 
-.header-cart-item-img:hover:after {
-  opacity: 1;
-}
 
 /*---------------------------------------------*/
 .header-cart-item-txt {
-  width: calc(100% - 80px);
+  width: calc(100% - 110px);
+}
+.header-cart-item-trash{
+  width: 25px;
+  margin-top: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  
+}
+.header-cart-item-trash a{
+  text-decoration: none;
+  color: #666;
+  transition: 0.3s ease-in-out;
+}
+.header-cart-item-trash a:hover{
+  color: rgb(113,127,224);
+}
+.header-cart-item-trash a{
+  font-size: 20px;
 }
 
 .header-cart-item-name {
@@ -1932,10 +1925,11 @@ input.num-product::-webkit-inner-spin-button {
 
 .table-shopping-cart .column-5 {
   width: 172px;
-  padding-right: 50px;
+  padding-right: 20px;
   text-align: right;
   font-size: 16px;
 }
+
 
 .table-shopping-cart .table_row {
   height: 185px;
@@ -3025,34 +3019,7 @@ input.num-product::-webkit-inner-spin-button {
   width: 100%;
 }
 
-.how-itemcart1::after {
-  content: "\e870";
-  font-family: Linearicons-Free;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  opacity: 0;
-}
 
-.how-itemcart1:hover:after {
-  opacity: 1;
-}
 
 /*---------------------------------------------*/
 .how-bor2,
