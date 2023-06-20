@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shipping</title>
+
+  <link rel="stylesheet" href="css/main.css?v=1628755089081">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00b4b6" />
+
+  <meta name="description" content="Hipster store - Ship">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130795909-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-130795909-1');
+  </script>
+
+</head>
+
+<body>
+
+  <div id="app">
+
+    <nav id="navbar-main" class="navbar is-fixed-top">
+
+      <div class="navbar-menu" id="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item dropdown has-divider has-user-avatar">
+            <a class="navbar-link">
+              <div class="user-avatar">
+                <img src="img/avatar.png" alt="Shipper" class="rounded-full">
+              </div>
+              <div class="is-user-name"><span>Shipper</span></div>
+              <span class="icon"><i class="mdi mdi-chevron-down"></i></span>
+            </a>
+            <div class="navbar-dropdown">
+              <a href="profile.html" class="navbar-item">
+                <span class="icon"><i class="mdi mdi-account"></i></span>
+                <span>My Profile</span>
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                <span class="icon"><i class="mdi mdi-logout"></i></span>
+                <span>Log Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="aside is-placed-left is-expanded">
+      <div class="aside-tools">
+        <div>
+          <b class="font-black">HIPSTER STORE</b>
+        </div>
+      </div>
+      <div class="menu is-menu-main">
+        <p class="menu-label">Manage Undelivered Orders</p>
+
+        <ul class="menu-list">
+          <li class="--set-active-index-html">
+            <a href="ship_orders.html">
+              <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+              <span class="menu-item-label">Order Management</span>
+            </a>
+          </li>
+        </ul>
+
+        <p class="menu-label">MANAGE ORDER IN TRANSIT</p>
+        <ul class="menu-list">
+          <li class="active">
+            <a href="ship_transit.html">
+              <span class="icon"><i class="mdi mdi-table"></i></span>
+              <span class="menu-item-label">Shipment Management</span>
+            </a>
+          </li>
+        </ul>
+
+        <p class="menu-label">MANAGE ORDER DELIVERED</p>
+        <ul class="menu-list">
+          <li>
+            <li class="active">
+              <a href="ship_delivered.html">
+                <span class="icon"><i class="mdi mdi-table"></i></span>
+                <span class="menu-item-label">Delivered Orders</span>
+              </a>
+            </li>
+          </li>
+        </ul>
+
+      </div>
+    </aside>
+
+
+    
+
+    <section class="section main-section">
+        
+        
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-3 mb-6">
+            <div class="card">
+              <div class="card-content">
+                <div class="flex items-center justify-between">
+                  <div class="widget-label">
+                    <h3>
+                        Undelivered Orders
+                    </h3>
+                    <h1>
+                      2
+                    </h1>
+                  </div>
+                  <span class="icon widget-icon text-green-500"><i class="mdi mdi-account-multiple mdi-48px"></i></span>
+                </div>
+              </div>
+            </div>
+            
+      
+            <div class="card">
+              <div class="card-content">
+                <div class="flex items-center justify-between">
+                  <div class="widget-label">
+                    <h3>
+                        Orders Delivered Successfully
+                    </h3>
+                    <h1>
+                      101
+                    </h1>
+                  </div>
+                  <span class="icon widget-icon text-red-500"><i class="mdi mdi-finance mdi-48px"></i></span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                  <div class="flex items-center justify-between">
+                    <div class="widget-label">
+                      <h3>
+                        Revenue
+                      </h3>
+                      <h1>
+                        700$
+                      </h1>
+                    </div>
+                    <span class="icon widget-icon text-blue-500"><i class="mdi mdi-cart-outline mdi-48px"></i></span>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+      <div class="card has-table">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon"><i class="mdi mdi-account-multiple"></i></span>
+            Manage Undelivered Orders
+          </p>
+        </header>
+        <div class="card-content">
+          <table>
+            <thead>
+              <tr>
+
+                <th>ID</th>
+                <th>Name</th>
+                <th>Product</th>
+                <th>Address</th>
+                <th>Total Price</th>
+                <th>Created</th>
+                <th>Deliver The Order</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+
+
+
+              <tr>
+                <td data-label="ID">1</td>
+                <td data-label="Name">Hipsterstore</td>
+                <td data-label="Product">Hoodie</td>
+                <td data-label="Address">Da Nang</td>
+                <td data-label="TotalPrice">1000$</td>
+                <td data-label="Created">
+                  <small class="text-gray-500" title="Dec 18, 2021">Dec 18, 2023</small>
+                </td>
+                <td data-label="DeliverTheOrder">
+                    <button class="button small green --jb-modal" type="button">
+                        Completed
+                    </button>
+                </td>
+                <td class="actions-cell">
+                  <div class="buttons right nowrap">
+                    <button class="button small green --jb-modal" data-target="sample-modal" type="button">
+                      View details
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td data-label="ID">2</td>
+                <td data-label="Name">Hipsterstore</td>
+                <td data-label="Product">Hoodie</td>
+                <td data-label="Address">Ha Noi</td>
+                <td data-label="TotalPrice">1000$</td>
+                <td data-label="Created">
+                  <small class="text-gray-500" title="Dec 18, 2021">Dec 20, 2024</small>
+                </td>
+                <td data-label="DeliverTheOrder">
+                    <button class="button small red --jb-modal" type="button">
+                        Failed
+                    </button>
+                </td>
+                <td class="actions-cell">
+                  <div class="buttons right nowrap">
+                    <button class="button small green --jb-modal" data-target="sample-modal" type="button">
+                      View details
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+
+
+              
+
+            </tbody>
+          </table>
+          <div class="table-pagination">
+            <div class="flex items-center justify-between">
+              <div class="buttons">
+                <button type="button" class="button active">1</button>
+                <button type="button" class="button">2</button>
+                <button type="button" class="button">3</button>
+              </div>
+              <small>Page 1 of 3</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
+          <div class="flex items-center justify-start space-x-3">
+            <div>
+              Copyright © 2023 Hipsterstore All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="sample-modal" class="modal">
+        <div class="modal-background --jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">ORDER DETAILS</p>
+          </header>
+          <section class="modal-card-body">
+            <p>PRODUCT<b>PRICE</b></p>
+            <p>ADDRESS</p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button --jb-modal-close">Cancel</button>
+          </footer>
+        </div>
+      </div>
+
+      <div id="sample-modal-2" class="modal">
+        <div class="modal-background --jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">ACCEPT THE ORDER!</p>
+          </header>
+          <section class="modal-card-body">
+            <p>Are you sure you will deliver this order?</p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button --jb-modal-close">Cancel</button>
+            <button class="button blue --jb-modal-close">Confirm</button>
+          </footer>
+        </div>
+      </div>
+
+      <div id="sample-modal-3" class="modal">
+        <div class="modal-background --jb-modal-close"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">REFUSE THE ORDER!</p>
+          </header>
+          <section class="modal-card-body">
+            <p>Are you sure you don't want to deliver this order?</p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button --jb-modal-close">Cancel</button>
+            <button class="button blue --jb-modal-close">Confirm</button>
+          </footer>
+        </div>
+      </div>
+
+
+
+  </div>
+
+  <!-- Scripts below are for demo only -->
+  <script type="text/javascript" src="js/main.min.js?v=1628755089081"></script>
+
+
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '658339141622648');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=658339141622648&ev=PageView&noscript=1" /></noscript>
+
+  <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+
+</body>
+
+</html>
