@@ -24,7 +24,7 @@ input {
   border-radius: 5px;
   border: none;
   position: absolute;
-  max-width: 40%;
+  width: 40%;
   z-index: 100;
   background: #FFE4B5;
   font-size: 15px;

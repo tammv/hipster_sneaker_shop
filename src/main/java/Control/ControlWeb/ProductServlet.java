@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import Control.DB.ProductDAO;
-import Model.Content;
+import Model.Product;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -18,7 +18,7 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            List<Content> list = new ProductDAO().getListProduct();
+            List<Product> list = new ProductDAO().getListProduct();
             req.setAttribute("listProduct", list);
             req.getRequestDispatcher("product.jsp").forward(req, resp);
         } catch (SQLException | ClassNotFoundException e) {

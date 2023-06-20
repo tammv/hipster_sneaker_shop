@@ -82,6 +82,7 @@
                       <c:forEach items="${sessionScope.cart_user.list_product}" var="productCart">
                         <tr class="table_row">
                           <td class="column-1">
+                            <div class="productId d-none">${productCart.product.product_id}</div>
                             <div class="how-itemcart1">
                               <img src="${productCart.product.img}" alt="IMG" />
                             </div>
@@ -91,7 +92,7 @@
                             <div class="price_product">${productCart.product.profit_price} $</div>
                           </td>
                           <td class="column-3">
-                            <select class="w-75" name="${productCart.product.product_id}size${productCart.size}" id="">
+                            <select class="w-75 sizeTable" name="${productCart.product.product_id}size${productCart.size}" id="">
                               <option value="${productCart.size}">${productCart.size}</option>
                               <option value="38">38</option>
                               <option value="39">39</option>
@@ -122,6 +123,7 @@
                             </div>
                           </td>
                           <td class="column-5"></td>
+                          
   
                         </tr>
                       </c:forEach>
@@ -141,7 +143,7 @@
                     />
                   </div>
   
-                  <button type="submit" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+                  <button type="submit" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10 updateToCart">
                     Update To Cart
                   </button>
                 </div>
@@ -149,17 +151,17 @@
             </form>
           </div>
 
-          <div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
+          <div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50 cartTotal">
             <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
               <h4 class="mtext-109 cl2 p-b-30">Cart Totals</h4>
 
               <div class="flex-w flex-t bor12 p-b-13">
                 <div class="size-208">
-                  <span class="stext-110 cl2"> Subtotal: </span>
+                  <span class="stext-110 cl2 "> Subtotal: </span>
                 </div>
 
                 <div class="size-209">
-                  <span class="mtext-110 cl2"> $79.65 </span>
+                  <span class="mtext-110 cl2 subtotal"></span>
                 </div>
               </div>
 
@@ -177,37 +179,20 @@
                   <div class="p-t-15">
                     <span class="stext-112 cl8"> Calculate Shipping </span>
 
-                    <div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
-                      <!-- <select class="js-select2" name="time">
-                        <option>Select a country...</option>
-                        <option>USA</option>
-                        <option>UK</option>
-                      </select>
-                      <div class="dropDownSelect2"></div>
-                    </div>
-
-                    <div class="bor8 bg0 m-b-12">
-                      <input
-                        class="stext-111 cl8 plh3 size-111 p-lr-15"
-                        type="text"
-                        name="state"
-                        placeholder="State /  country"
-                      /> -->
-                      <select name="calc_shipping_provinces" >
+                    <div class=" bg0 m-b-12">
+                      <select name="calc_shipping_provinces " class="city w-100" >
                         <option value="">City</option>
+                        <c:forEach items="${sessionScope.list_fee}" var="fee">
+                          <option value="${fee.feeShip}">${fee.city}</option>
+                        </c:forEach>
                       </select>
-                      <select name="calc_shipping_district" >
-                        <option value="">District</option>
-                      </select>
-                      <input class="billing_address_1" name="" type="hidden" value="" />
-                      <input class="billing_address_2" name="" type="hidden" value="" />
+                      
                     </div>
-                    <input type="text" placeholder="Address" />
-
+                    <textarea class="form-control m-b-9 address" rows="5" placeholder="Address" name="address"></textarea>
                     <div class="flex-w">
-                      <div class="flex-c-m stext-101 cl2 size-115 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer">
+                      <button class="flex-c-m stext-101 cl2 size-115 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer updateTotal">
                         Update Totals
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -219,13 +204,13 @@
                 </div>
 
                 <div class="size-209 p-t-1">
-                  <span class="mtext-110 cl2"> $79.65 </span>
+                  <span class="mtext-110 cl2 totalOfBill"> $0.0 </span>
                 </div>
               </div>
 
-              <button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+              <a href="" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer proceedToCheckout">
                 Proceed to Checkout
-              </button>
+              </a>
             </div>
           </div>
         </div>

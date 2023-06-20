@@ -3,7 +3,6 @@ var jsmodal1 = document.querySelector('.js-modal1');
 for (var i = 0; i < quickViewLinks.length; i++) {
   quickViewLinks[i].addEventListener('click', function(event) {
     
-    console.log("hellooo");
     var clickedLink = event.target; 
     var block2Div = clickedLink.closest('.block2'); 
 
@@ -39,4 +38,4 @@ for (var i = 0; i < list_item.length; i++) {
   s = s + parseFloat(list_item[i].textContent);
 }
 
-total.textContent = "Total: $" + s.toFixed(2);
+total.textContent = "Total: $" + s.toFixed(1);

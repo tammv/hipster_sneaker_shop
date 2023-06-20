@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
 
+
 # Log file
 *.log
 
@@ -23,6 +24,5 @@
 hs_err_pid*
 replay_pid*
 
-
-D:\SU23\SWP301\WorkSpace_SWP\SWPteam\hipster_sneaker_shop\target
-/src/main/java/Control/DB/DBconnect.java
+DBconnect.java
+target

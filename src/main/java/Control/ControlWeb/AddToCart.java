@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import Control.DB.CartUserDAO;
 import Control.DB.ProductDAO;
 import Model.Cart;
-import Model.Content;
+import Model.Product;
 import Model.Product_Cart;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -29,7 +29,7 @@ public class AddToCart extends HttpServlet {
         if (session.getAttribute("user") != null)
         
         try {
-            Content product = new ProductDAO().getProduct(product_id);
+            Product product = new ProductDAO().getProduct(product_id);
             Product_Cart product_Cart = new Product_Cart(product, size, quantity);
             Cart cart = (Cart) session.getAttribute("cart_user");
             cart.addP(product_Cart);

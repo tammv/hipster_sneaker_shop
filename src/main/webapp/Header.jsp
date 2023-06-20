@@ -29,7 +29,7 @@
               </li>
 
               <li>
-                <a href="blog.jsp">Blog</a>
+                <a href="blog">Blog</a>
               </li>
 
               <li>

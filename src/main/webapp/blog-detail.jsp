@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@ page session="true" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -185,7 +185,7 @@
                 </div>
               </div>
 
-              <!--  -->
+              <!--  
               <div class="p-t-40">
                 <h5 class="mtext-113 cl2 p-b-12">Leave a Comment</h5>
 
@@ -227,7 +227,7 @@
                   </button>
                 </form>
               </div>
-            </div>
+            </div>-->
           </div>
 
           <div class="col-md-4 col-lg-3 p-b-80">

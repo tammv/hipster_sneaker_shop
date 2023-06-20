@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -64,7 +64,7 @@
 						<div class="img-circle text-center mb-3">
 							<img src="images/user2.png" alt="Image" class="shadow">
 						</div>
-						<h4 class="text-center">Kiran Acharya</h4>
+						<h4 class="text-center">${sessionScope.user}</h4>
 					</div>
 					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab"

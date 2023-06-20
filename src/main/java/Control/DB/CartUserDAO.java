@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 import Model.Cart;
-import Model.Content;
+import Model.Product;
 import Model.Product_Cart;
 
 public class CartUserDAO {
@@ -26,7 +26,7 @@ public class CartUserDAO {
         ps.setInt(1, cart_id);
         rs = ps.executeQuery();
         while(rs.next()){
-            Content p = new ProductDAO().getProduct(rs.getInt(2));
+            Product p = new ProductDAO().getProduct(rs.getInt(2));
             Product_Cart p_cart = new Product_Cart(p, rs.getInt(3), rs.getInt(4));
             list.add(p_cart);
         }
@@ -88,7 +88,9 @@ public class CartUserDAO {
     public void editCart(Cart cart) throws  ClassNotFoundException, SQLException {
         deleteAll(cart.getCartId());
         for (Product_Cart product_Cart : cart.getList_product()) {
-            insertProduct(cart.getCartId(), product_Cart.getProduct().getProduct_id(), product_Cart.getQuantity(), product_Cart.getSize());
+            if(product_Cart.getQuantity()!=0){
+                insertProduct(cart.getCartId(), product_Cart.getProduct().getProduct_id(), product_Cart.getQuantity(), product_Cart.getSize());
+            }
         }
     }
 
