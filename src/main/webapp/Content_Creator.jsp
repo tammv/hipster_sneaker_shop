@@ -1,70 +1,70 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ page session="true" %>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Empoyee edit</title>
+  <title>Content Creator</title>
   <meta name="description" content />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- favicon
 		============================================ -->
-  <link rel="shortcut icon" type="image/x-icon" href="admin/img/favicon.png" />
-  <!-- Google Fonts
+    <link rel="shortcut icon" type="image/x-icon" href="admin/img/favicon.png" />
+    <!-- Google Fonts
 		============================================ -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet" />
-  <!-- Bootstrap CSS
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet" />
+    <!-- Bootstrap CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/bootstrap.min.css" />
-  <!-- Bootstrap CSS
+    <link rel="stylesheet" href="admin/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/font-awesome.min.css" />
-  <!-- nalika Icon CSS
+    <link rel="stylesheet" href="admin/css/font-awesome.min.css" />
+    <!-- nalika Icon CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/nalika-icon.css" />
-  <!-- owl.carousel CSS
+    <link rel="stylesheet" href="admin/css/nalika-icon.css" />
+    <!-- owl.carousel CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/owl.carousel.css" />
-  <link rel="stylesheet" href="admin/css/owl.theme.css" />
-  <link rel="stylesheet" href="admin/css/owl.transitions.css" />
-  <!-- animate CSS
+    <link rel="stylesheet" href="admin/css/owl.carousel.css" />
+    <link rel="stylesheet" href="admin/css/owl.theme.css" />
+    <link rel="stylesheet" href="admin/css/owl.transitions.css" />
+    <!-- animate CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/animate.css" />
-  <!-- normalize CSS
+    <link rel="stylesheet" href="admin/css/animate.css" />
+    <!-- normalize CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/normalize.css" />
-  <!-- meanmenu icon CSS
+    <link rel="stylesheet" href="admin/css/normalize.css" />
+    <!-- meanmenu icon CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/meanmenu.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- main CSS
+    <link rel="stylesheet" href="admin/css/meanmenu.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- main CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/main.css" />
-  <!-- morrisjs CSS
+    <link rel="stylesheet" href="admin/css/main.css" />
+    <!-- morrisjs CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/morrisjs/morris.css" />
-  <!-- mCustomScrollbar CSS
+    <link rel="stylesheet" href="admin/css/morrisjs/morris.css" />
+    <!-- mCustomScrollbar CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/scrollbar/jquery.mCustomScrollbar.min.css" />
-  <!-- metisMenu CSS
+    <link rel="stylesheet" href="admin/css/scrollbar/jquery.mCustomScrollbar.min.css" />
+    <!-- metisMenu CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/metisMenu/metisMenu.min.css" />
-  <link rel="stylesheet" href="admin/css/metisMenu/metisMenu-vertical.css" />
-  <!-- calendar CSS
+    <link rel="stylesheet" href="admin/css/metisMenu/metisMenu.min.css" />
+    <link rel="stylesheet" href="admin/css/metisMenu/metisMenu-vertical.css" />
+    <!-- calendar CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/calendar/fullcalendar.min.css" />
-  <link rel="stylesheet" href="admin/css/calendar/fullcalendar.print.min.css" />
-  <!-- style CSS
+    <link rel="stylesheet" href="admin/css/calendar/fullcalendar.min.css" />
+    <link rel="stylesheet" href="admin/css/calendar/fullcalendar.print.min.css" />
+    <!-- style CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/style.css" />
-  <!-- responsive CSS
+    <link rel="stylesheet" href="admin/style.css" />
+    <!-- responsive CSS
 		============================================ -->
-  <link rel="stylesheet" href="admin/css/responsive.css" />
-  <!-- modernizr JS
+    <link rel="stylesheet" href="admin/css/responsive.css" />
+    <!-- modernizr JS
 		============================================ -->
-  <script src="admin/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="admin/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -77,19 +77,19 @@
       <div class="nalika-profile">
         <div class="profile-dtl">
           <a href="#"><img src="img/notification/4.jpg" alt /></a>
-          <h2>CONTENT CREATOR </h2>
+          <h2>HIPTERS STORE</h2>
         </div>
         <!-- <div class="profile-social-dtl">
-            <ul class="dtl-social">
-              <li>
-                <a href="#"><i class="icon nalika-facebook"></i></a>
-              </li>
-            
-              <li>
-                <a href="#"><i class="icon nalika-linkedin"></i></a>
-              </li>
-            </ul>
-          </div> -->
+              <ul class="dtl-social">
+                <li>
+                  <a href="#"><i class="icon nalika-facebook"></i></a>
+                </li>
+              
+                <li>
+                  <a href="#"><i class="icon nalika-linkedin"></i></a>
+                </li>
+              </ul>
+            </div> -->
       </div>
       <div class="left-custom-menu-adp-wrap comment-scrollbar">
         <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -101,6 +101,11 @@
                 <i class="icon nalika-forms icon-wrap"></i>
                 <span class="mini-click-non">Manage Content</span>
               </a>
+              <ul class="submenu-angle" aria-expanded="true">
+                <li>
+                  <a title="Product List" href="#"><span class="mini-sub-pro">Edit Content Detail</span></a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -183,6 +188,10 @@
                     <li>
                       <a data-toggle="collapse" data-target="#Charts" href="#">Manage Content <span
                           class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul class="collapse dropdown-header-top">
+                        <li><a href="#">shipping list</a></li>
+                        <li><a href="#">delivery list</a></li>
+                      </ul>
                     </li>
 
                   </ul>
@@ -223,148 +232,113 @@
               <div class="product-status-wrap">
                 <h4>Contents List</h4>
                 <div class="add-product">
-                  <a href="product-edit.html">Add Content</a>
+                  <a href="add-content.jsp">Add Content</a>
                 </div>
                 <table>
                   <tr>
+                    <th>Id</th>
                     <th>Img</th>
                     <th>Content Title</th>
                     <th>Date</th>
 
                   </tr>
                   <c:forEach items="${listContent}" var="content">
-                    <!-- Display the book information -->
                     <tr>
-                      <td style="border: 1px solid">${content.img}</td>
+                      <td style="border: 1px solid">${content.id}</td>
+                      <td style="border: 1px solid"><img src="${content.img}" alt="" /></td>
                       <td style="border: 1px solid">${content.title}</td>
                       <td style="border: 1px solid">${content.created_at}</td>
+                      <td style="border: 1px solid">
+                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </td>
                     </tr>
                   </c:forEach>
 
                 </table>
-                <table>
-                  <tr>
-                    <th>Img</th>
-                    <th>Content Title</th>
-                    <th>Date</th>
 
-                  </tr>
-                  <c:forEach items="${listContent}" var="content">
-                    <!-- Display the book information -->
-                    <tr>
-                      <td style="border: 1px solid">${content.img}</td>
-                      <td style="border: 1px solid">${content.title}</td>
-                      <td style="border: 1px solid">${content.created_at}</td>
-                    </tr>
-                  </c:forEach>
-
-                </table><table>
-                  <tr>
-                    <th>Img</th>
-                    <th>Content Title</th>
-                    <th>Date</th>
-
-                  </tr>
-                  <c:forEach items="${listContent}" var="content">
-                    <!-- Display the book information -->
-                    <tr>
-                      <td style="border: 1px solid">${content.img}</td>
-                      <td style="border: 1px solid">${content.title}</td>
-                      <td style="border: 1px solid">${content.created_at}</td>
-                    </tr>
-                  </c:forEach>
-
-                </table>
-                <div class="custom-pagination">
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Single pro tab start-->
-      <div class="single-product-tab-area mg-b-30">
-        <!-- Single pro tab review Start-->
-        <div class="single-pro-review-area">
-          <div class="container-fluid">
-            <div class="row">
-              <!-- Content  -->
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright-area">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="footer-copy-right">
-                <p>
-                  Copyright © 2023 <a href="https://www.facebook.com/hipsterstore">Hipsterstore</a> All rights reserved.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- jquery
+    <!-- Single pro tab start-->
+    <div class="single-product-tab-area mg-b-30">
+      <!-- Single pro tab review Start-->
+      <div class="single-pro-review-area">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Content  -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-copy-right">
+              <p>
+                Copyright© 2023 <a href="https://www.facebook.com/hipsterstore">Hipsterstore</a> All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jquery
 		============================================ -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- bootstrap JS
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <!-- bootstrap JS
 		============================================ -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- wow JS
+  <script src="js/bootstrap.min.js"></script>
+  <!-- wow JS
 		============================================ -->
-    <script src="js/wow.min.js"></script>
-    <!-- price-slider JS
+  <script src="js/wow.min.js"></script>
+  <!-- price-slider JS
 		============================================ -->
-    <script src="js/jquery-price-slider.js"></script>
-    <!-- meanmenu JS
+  <script src="js/jquery-price-slider.js"></script>
+  <!-- meanmenu JS
 		============================================ -->
-    <script src="js/jquery.meanmenu.js"></script>
-    <!-- owl.carousel JS
+  <script src="js/jquery.meanmenu.js"></script>
+  <!-- owl.carousel JS
 		============================================ -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- sticky JS
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- sticky JS
 		============================================ -->
-    <script src="js/jquery.sticky.js"></script>
-    <!-- scrollUp JS
+  <script src="js/jquery.sticky.js"></script>
+  <!-- scrollUp JS
 		============================================ -->
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- mCustomScrollbar JS
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <!-- mCustomScrollbar JS
 		============================================ -->
-    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
-    <!-- metisMenu JS
+  <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+  <!-- metisMenu JS
 		============================================ -->
-    <script src="js/metisMenu/metisMenu.min.js"></script>
-    <script src="js/metisMenu/metisMenu-active.js"></script>
-    <!-- morrisjs JS
+  <script src="js/metisMenu/metisMenu.min.js"></script>
+  <script src="js/metisMenu/metisMenu-active.js"></script>
+  <!-- morrisjs JS
 		============================================ -->
-    <script src="js/sparkline/jquery.sparkline.min.js"></script>
-    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
-    <!-- calendar JS
+  <script src="js/sparkline/jquery.sparkline.min.js"></script>
+  <script src="js/sparkline/jquery.charts-sparkline.js"></script>
+  <!-- calendar JS
 		============================================ -->
-    <script src="js/calendar/moment.min.js"></script>
-    <script src="js/calendar/fullcalendar.min.js"></script>
-    <script src="js/calendar/fullcalendar-active.js"></script>
-    <!-- tab JS
+  <script src="js/calendar/moment.min.js"></script>
+  <script src="js/calendar/fullcalendar.min.js"></script>
+  <script src="js/calendar/fullcalendar-active.js"></script>
+  <!-- tab JS
 		============================================ -->
-    <script src="js/tab.js"></script>
-    <!-- plugins JS
+  <script src="js/tab.js"></script>
+  <!-- plugins JS
 		============================================ -->
-    <script src="js/plugins.js"></script>
-    <!-- main JS
+  <script src="js/plugins.js"></script>
+  <!-- main JS
 		============================================ -->
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

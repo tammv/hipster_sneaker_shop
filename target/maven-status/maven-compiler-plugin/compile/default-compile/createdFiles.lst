@@ -4,6 +4,7 @@ Control\ControlWeb\ProcessReset.class
 Control\DB\OrderDAO.class
 Control\DB\OrderItemDAO.class
 Control\ControlWeb\processLink.class
+Control\ControlWeb\AddContent.class
 Model\Fee.class
 Control\ControlWeb\ProductServlet.class
 Control\Feature.class

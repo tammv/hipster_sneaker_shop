@@ -93,7 +93,7 @@
                         </span>
                       </span>
 
-                      <a href="blog-detail.jsp" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
+                      <a href="blog-detail?content_id=${content.id}" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
                         Continue Reading
 
                         <i class="fa fa-long-arrow-right m-l-9"></i>
