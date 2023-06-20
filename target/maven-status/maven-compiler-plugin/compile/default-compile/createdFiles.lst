@@ -40,5 +40,6 @@ Model\Valid.class
 Control\ControlWeb\ListProduct.class
 Model\ProductDetailDAO.class
 Control\ControlWeb\DeleteProductAdmin.class
+Control\ControlWeb\DeleteContentServlet.class
 Model\Account_SignUp.class
 Control\DB\ContentDAO.class
