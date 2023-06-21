@@ -71,4 +71,16 @@ public class ContentDAO {
         ps.executeUpdate();
     }
 
+    // Update content
+    public void updateContent(Content content) throws SQLException, ClassNotFoundException {
+        conn = DBconnect.makeConnection();
+        String query = "UPDATE ContentCreator_Table SET title=?, img=?, content=?, update_at=GETDATE() WHERE content_id=?";
+        ps = conn.prepareStatement(query);
+        ps.setString(1, content.getTitle());
+        ps.setString(2, content.getImg());
+        ps.setString(3, content.getContent());
+        ps.setString(4, content.getId());
+        ps.executeUpdate();
+    }
+
 }

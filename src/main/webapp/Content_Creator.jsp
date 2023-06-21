@@ -244,18 +244,24 @@
 
                       </tr>
                       <c:forEach items="${listContent}" var="content">
-                        <tr>
+                        <tr class="parent-element-class">
                           <td style="border: 1px solid">${content.id}</td>
                           <td style="border: 1px solid"><img src="${content.img}" alt="" /></td>
                           <td style="border: 1px solid">${content.title}</td>
                           <td style="border: 1px solid">${content.created_at}</td>
                           <td style="border: 1px solid">
-                            <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i
-                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                            <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"
-                              data-content-id="${content.id}">
+
+                            <button data-toggle="tooltip" title="Edit" class="pd-setting-ed-edit">
+                              <a href="updateContent.jsp?contentId=${content.id}&amp;title=${content.title}&amp;img=${content.img}&amp;content=${content.content}">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                              </a>
+                            </button>
+                            
+                            <button data-toggle="tooltip" title="Trash" class="pd-setting-ed" data-content-id="${content.id}" onclick="showConfirmation(this)">
                               <i class="fa fa-trash-o" aria-hidden="true"></i>
                             </button>
+                            
+
 
                           </td>
                         </tr>
@@ -349,32 +355,50 @@
       <!-- delete button
 		============================================ -->
       <script>
-        // Lấy danh sách tất cả các nút xóa trong trang
+        // Get all delete buttons in the page
         var deleteButtons = document.querySelectorAll('.pd-setting-ed');
 
-        // Duyệt qua danh sách các nút xóa và gắn sự kiện nhấp vào mỗi nút
+        // Iterate over each delete button and attach click event listener
         deleteButtons.forEach(function (button) {
-          button.addEventListener('click', function () {
-            // Lấy contentId từ thuộc tính data-content-id của nút xóa
-            var contentId = button.getAttribute('data-content-id');
+          button.addEventListener('click', function (event) {
+            // Check if the target element is an anchor tag within the delete button
+            if (event.target.tagName.toLowerCase() !== 'a' && !button.classList.contains('pd-setting-ed-edit')) {
+              // Get the contentId from the data-content-id attribute of the delete button
+              var contentId = button.getAttribute('data-content-id');
 
-            // Gửi yêu cầu HTTP GET đến servlet DeleteContentServlet với contentId
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'deleteContent?contentId=' + contentId);
-            xhr.send();
+              // Display the confirmation dialog before deleting
+              var confirmed = confirm("Are you sure you want to delete?");
 
-            // Sau khi xóa thành công, làm gì đó (chẳng hạn là cập nhật lại trang)
-            xhr.onload = function () {
-              if (xhr.status === 200) {
-                // Xóa thành công, thực hiện cập nhật lại trang
-                location.reload();
-              } else {
-                // Xảy ra lỗi, hiển thị thông báo lỗi hoặc xử lý theo ý muốn
-                console.error('Error deleting content: ' + xhr.status);
+              if (confirmed) {
+                // Send a GET request to the DeleteContentServlet with the contentId
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'deleteContent?contentId=' + contentId);
+                xhr.send();
+
+                // After successful deletion, perform some action (e.g., update the page)
+                xhr.onload = function () {
+                  if (xhr.status === 200) {
+                    // Deletion successful, perform page update
+                    location.reload();
+                  } else {
+                    // Error occurred, display error message or handle as desired
+                    console.error('Error deleting content: ' + xhr.status);
+                  }
+                };
               }
-            };
+            }
           });
         });
+
+      </script>
+
+      <!-- update.jsp
+		============================================ -->
+      <script>
+        
+        function redirectToUpdatePage() {
+          window.location.href = 'updateContent.jsp';
+        }
       </script>
 
     </body>

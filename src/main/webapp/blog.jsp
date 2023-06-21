@@ -1,8 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
   <!DOCTYPE html>
   <html lang="en">
-
 
   <head>
     <title>Blog</title>
@@ -11,7 +9,6 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.png" />
     <!--===============================================================================================-->
-
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
@@ -32,7 +29,6 @@
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css" />
-
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -46,18 +42,15 @@
       <c:import url="Header.jsp" />
     </header>
 
-
     <!-- Cart -->
     <c:import url="Cart.jsp" />
 
     <!-- Title page -->
     <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg')">
-
       <h2 class="ltext-105 cl0 txt-center">Blog</h2>
     </section>
 
     <!-- Content page -->
-
     <c:forEach items="${sessionScope.listContent}" var="content">
       <section class="bg0 p-t-62 p-b-60">
         <div class="container">
@@ -182,16 +175,13 @@
                       Trending
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </section>
     </c:forEach>
-
 
     <!-- Footer -->
     <footer class="bg3 p-t-75 p-b-32">
@@ -257,7 +247,6 @@
           <div class="col-sm-6 col-lg-3 p-b-50">
             <h4 class="stext-301 cl0 p-b-30">Subscribe</h4>
             <div class="p-t-27">
-
               <a href="https://www.facebook.com/hipsterstore" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                 <i class="fa-brands fa-facebook"></i>
               </a>
@@ -267,7 +256,6 @@
               </a>
 
               <a href="https://www.tiktok.com" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-
                 <i class="fa-brands fa-tiktok"></i>
               </a>
             </div>
@@ -324,6 +312,4 @@
     <script src="js/main.js"></script>
   </body>
 
-
   </html>
-

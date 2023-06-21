@@ -29,9 +29,7 @@
               </li>
 
               <li>
-
                 <a href="blog">Blog</a>
-
               </li>
 
               <li>
