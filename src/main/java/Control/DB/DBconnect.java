@@ -7,6 +7,7 @@ import java.sql.SQLException;
 
 public class DBconnect {
     
+
     public static Connection makeConnection() throws ClassNotFoundException {
         String namedatabase = "Final_Project";
         try {
@@ -21,6 +22,9 @@ public class DBconnect {
             e.printStackTrace();
         }
         return null;
+
+
+ 
     }
 }
 
