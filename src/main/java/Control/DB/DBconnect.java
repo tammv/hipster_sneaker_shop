@@ -7,6 +7,7 @@ import java.sql.SQLException;
 
 public class DBconnect {
     
+
     public static Connection makeConnection() throws ClassNotFoundException {
         try {
             String url = "jdbc:sqlserver://localhost:1433;encrypt=true;databaseName=Final_Project;trustServerCertificate=true";

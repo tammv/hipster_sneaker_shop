@@ -1,4 +1,6 @@
+
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page session="true" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -98,6 +100,7 @@
         </span>
       </div>
     </div>
+
     <!-- Content page -->
     <section class="bg0 p-t-52 p-b-20">
       <div class="container">
@@ -106,7 +109,9 @@
             <div class="p-r-45 p-r-0-lg">
               <!--  -->
               <div class="wrap-pic-w how-pos5-parent">
+
                 <img src=" ${content_choose.img}" alt="IMG-BLOG" />
+
 
                 <div class="flex-col-c-m size-123 bg9 how-pos5">
                   <span class="ltext-107 cl2 txt-center"> 4 </span>
@@ -134,11 +139,13 @@
                 </span>
 
                 <h4 class="ltext-109 cl2 p-b-28">
+
                   ${content_choose.title}
                 </h4>
 
                 <p class="stext-117 cl6 p-b-26">
                   ${content_choose.content}
+
                 </p>
               </div>
 
@@ -162,49 +169,9 @@
                 </div>
               </div>
 
-              <!--  
-              <div class="p-t-40">
-                <h5 class="mtext-113 cl2 p-b-12">Leave a Comment</h5>
 
-                <p class="stext-107 cl6 p-b-40">
-                  Your email address will not be published. Required fields are
-                  marked *
-                </p>
+             
 
-                <form>
-                  <div class="bor19 m-b-20">
-                    <textarea
-                      class="stext-111 cl2 plh3 size-124 p-lr-18 p-tb-15"
-                      name="cmt"
-                      placeholder="Comment..."
-                    ></textarea>
-                  </div>
-
-                  <div class="bor19 size-218 m-b-20">
-                    <input
-                      class="stext-111 cl2 plh3 size-116 p-lr-18"
-                      type="text"
-                      name="name"
-                      placeholder="Name *"
-                    />
-                  </div>
-
-                  <div class="bor19 size-218 m-b-20">
-                    <input
-                      class="stext-111 cl2 plh3 size-116 p-lr-18"
-                      type="text"
-                      name="email"
-                      placeholder="Email *"
-                    />
-                  </div>
-                  <button
-                    class="flex-c-m stext-101 cl0 size-125 bg3 bor2 hov-btn3 p-lr-15 trans-04"
-                  >
-                    Post Comment
-                  </button>
-                </form>
-              </div>
-            </div>-->
           </div>
 
           <div class="col-md-4 col-lg-3 p-b-80">
