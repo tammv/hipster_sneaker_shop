@@ -4,7 +4,7 @@
  */
 package Control.ControlWeb;
 
-import Model.ProductDetailDAO;
+import Control.DB.ProductDetailDAO;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

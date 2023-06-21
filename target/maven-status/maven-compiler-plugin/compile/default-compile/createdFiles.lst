@@ -16,6 +16,7 @@ Control\DB\FeeDao.class
 Control\ControlWeb\Reset.class
 Control\DB\CartUserDAO.class
 Control\DB\UserDAO.class
+Control\ControlWeb\AddProduct.class
 Control\DB\CartDAO.class
 Control\ControlWeb\Send.class
 Control\ControlWeb\Login.class
@@ -32,5 +33,8 @@ Control\ControlWeb\Delete.class
 Control\ControlWeb\Send$2.class
 Control\ControlWeb\SignUpServlet.class
 Control\ControlWeb\AddToCart.class
+Control\ControlWeb\UpdateProduct.class
 Model\Valid.class
+Control\ControlWeb\ListProduct.class
+Control\ControlWeb\DeleteProductAdmin.class
 Model\Account_SignUp.class

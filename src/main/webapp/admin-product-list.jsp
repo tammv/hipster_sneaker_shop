@@ -342,7 +342,7 @@
                 <td>Name</td>
                 <td>Price</td>
                 <td>Quantity</td>
-                <td></td>
+                <td><a href="admin-product-add.jsp">Add</a></td>
                 <td></td>
             </tr>
         </thead>
@@ -364,7 +364,7 @@
                     <h5>${p.product_name}</h5>
                     <p>${p.brand}</p>
                 </td>
-
+                
                 <td class="active"><p>$${p.profit_price} </p></td>
 
                 <td class="role">

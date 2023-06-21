@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import Model.Product_Cart;
+import java.util.Map;
 
 public class ProductDetailDAO {
     Connection conn;
@@ -23,6 +24,32 @@ public class ProductDetailDAO {
             ps.executeUpdate();
         }
     }
+    
+        public void delete(String product_id) throws SQLException, ClassNotFoundException {
+        conn = DBconnect.makeConnection();
+        try { 
+            String sql = "UPDATE [dbo].[ProductDetail_Table]\n" +
+                         "SET [quantityOfSize] = 0\n" +
+                         "WHERE [product_id] = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, product_id);
+            ps.executeUpdate();
+            System.out.println("qua day chua 1");
+        } catch (Exception e) {
+        }
+    }
+        
+        
+        public void addProductDetail(int product_id, Map<Integer, Integer> sizeQuantityMap) throws ClassNotFoundException, SQLException {
+        conn = DBconnect.makeConnection();
 
-
+       String query = "Insert into ProductDetail_Table Values(?, ?, ?)";
+       ps = conn.prepareStatement(query);
+       for(Map.Entry<Integer, Integer> entry : sizeQuantityMap.entrySet()){
+           ps.setInt(1 , product_id);
+           ps.setInt(2,entry.getKey());
+           ps.setInt(3,entry.getValue());
+           ps.executeUpdate();
+       }      
+    }    
 }
