@@ -10,7 +10,13 @@ import java.util.List;
 import Model.Product;
 
 public class ProductDAO {
+<<<<<<< HEAD
     Connection conn;
+=======
+
+   
+    public Connection conn;
+>>>>>>> main
     PreparedStatement ps;
     ResultSet rs;
 
@@ -22,6 +28,7 @@ public class ProductDAO {
         rs = ps.executeQuery();
         List<Product> list_product = new ArrayList<>();
         while(rs.next()){
+<<<<<<< HEAD
             Product p = new Product(rs.getInt(1), rs.getString(2), rs.getString(3),rs.getString(4), rs.getFloat(5), rs.getString(6), rs.getInt(7), rs.getDate(8), rs.getDate(9));
             list_product.add(p);
         }
@@ -36,6 +43,9 @@ public class ProductDAO {
         List<Product> list_product = new ArrayList<>();
         while(rs.next()){
             Product p = new Product(rs.getInt(1), rs.getString(2), rs.getString(3),rs.getString(4), rs.getFloat(5), rs.getString(6), rs.getInt(7), rs.getDate(8), rs.getDate(9));
+=======
+            Product p = new Product(rs.getInt(1), rs.getString(2), rs.getString(3),rs.getString(4), rs.getFloat(5), rs.getString(6), rs.getInt(7), rs.getDate(8), rs.getDate(9),rs.getString(10));
+>>>>>>> main
             list_product.add(p);
         }
         return list_product;
@@ -50,11 +60,16 @@ public class ProductDAO {
         ps.setInt(1  , product_id);
         rs = ps.executeQuery();
         while(rs.next()){
+<<<<<<< HEAD
             Product p = new Product(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getFloat(5), rs.getString(6), rs.getInt(7), rs.getDate(8), rs.getDate(9));
+=======
+            Product p = new Product(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getFloat(5), rs.getString(6), rs.getInt(7), rs.getDate(8), rs.getDate(9), rs.getString(10));
+>>>>>>> main
             return p;
         }
         return null;
     }
+<<<<<<< HEAD
     
     
     public void add(String product_name, String brand, String product_description, String profit_price, String img ,String quantity) throws SQLException, ClassNotFoundException{
@@ -104,3 +119,30 @@ public class ProductDAO {
     }
     
 }
+=======
+
+    public List<Product> getListProductRelated(String brand , float profit_price, String color) throws ClassNotFoundException, SQLException{
+        List<Product> list = new ArrayList<>();
+        Float max_price = profit_price + 25;
+        Float min_price = profit_price - 25;
+        String query = "Select * From Product_Table where brand = ? and color = ? and profit_price between ? and ?";
+        conn = DBconnect.makeConnection();
+        ps = conn.prepareStatement(query);
+        ps.setString(1, brand);
+        ps.setString(2, color);
+        ps.setFloat(3, min_price);
+        ps.setFloat(4, max_price);
+        rs = ps.executeQuery();
+        while(rs.next()){
+            Product p = new Product(rs.getInt(1), rs.getString(2), rs.getString(3),rs.getString(4), rs.getFloat(5), rs.getString(6), rs.getInt(7), rs.getDate(8), rs.getDate(9), rs.getString(10));
+            list.add(p);
+        }
+        System.out.println(list.size());
+        System.out.println(max_price);
+        System.out.println(min_price);
+        return list;
+    }
+}
+   
+
+>>>>>>> main

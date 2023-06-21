@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <%--
 Document : product-detail
 Created on : Jun 7, 2023, 5:00:07 PM
@@ -334,6 +335,8 @@ Author : ASUS
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
 =======
+=======
+>>>>>>> main
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page session="true" %>
 <!DOCTYPE html>
@@ -393,17 +396,30 @@ Author : ASUS
     <!-- breadcrumb -->
     <div class="container">
       <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+<<<<<<< HEAD
         <a href="index.html" class="stext-109 cl8 hov-cl1 trans-04">
+=======
+        <a href="Home.jsp" class="stext-109 cl8 hov-cl1 trans-04">
+>>>>>>> main
           Home
           <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
         </a>
 
+<<<<<<< HEAD
         <a href="product.html" class="stext-109 cl8 hov-cl1 trans-04">
           Men
           <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
         </a>
 
         <span class="stext-109 cl4"> Lightweight Jacket </span>
+=======
+        <a href="product" class="stext-109 cl8 hov-cl1 trans-04">
+          Shop
+          <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+        </a>
+
+        <span class="stext-109 cl4"> ${param.product_name} </span>
+>>>>>>> main
       </div>
     </div>
 
@@ -414,6 +430,7 @@ Author : ASUS
           <div class="col-md-6 col-lg-7 p-b-30">
             <div class="p-l-25 p-r-30 p-lr-0-lg">
               <div class="wrap-slick3 flex-sb flex-w">
+<<<<<<< HEAD
                 <div class="wrap-slick3-dots"></div>
                 <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
@@ -457,18 +474,41 @@ Author : ASUS
                     </div>
                   </div>
                 </div>
+=======
+                <div class="item-slick3" data-thumb="">
+                  <div class="wrap-pic-w pos-relative">
+                    <img class="prouct_img" src="${param.img}" alt="IMG-PRODUCT" />
+                    <a
+                      class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04 expand_img"
+                      href=""
+                    >
+                      <i class="fa fa-expand"></i>
+                    </a>
+                  </div>
+                </div>
+
+>>>>>>> main
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-5 p-b-30">
             <div class="p-r-50 p-t-5 p-lr-0-lg">
+<<<<<<< HEAD
               <h4 class="mtext-105 cl2 js-name-detail p-b-14">Lightweight Jacket</h4>
 
               <span class="mtext-106 cl2"> $58.79 </span>
 
               <p class="stext-102 cl3 p-t-23">
                 Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+=======
+              <h4 class="mtext-105 cl2 js-name-detail p-b-14">${param.product_name}</h4>
+
+              <span class="mtext-106 cl2">${param.profit_price}</span>
+
+              <p class="stext-102 cl3 p-t-23">
+               ${param.product_description}
+>>>>>>> main
               </p>
 
               <!--  -->
@@ -478,6 +518,7 @@ Author : ASUS
 
                   <div class="size-204 respon6-next">
                     <div class="rs1-select2 bor8 bg0">
+<<<<<<< HEAD
                       <select class="js-select2" name="time">
                         <option>Choose an option</option>
                         <option>Size S</option>
@@ -501,6 +542,17 @@ Author : ASUS
                         <option>Blue</option>
                         <option>White</option>
                         <option>Grey</option>
+=======
+                      <select class="js-select2" name="time" required>
+                        <option value="38">Size 38</option>
+                        <option value="39">Size 39</option>
+                        <option value="40">Size 40</option>
+                        <option value="41">Size 41</option>
+                        <option value="42">Size 42</option>
+                        <option value="43">Size 43</option>
+                        <option value="44">Size 44</option>
+                        <option value="45">Size 45</option>
+>>>>>>> main
                       </select>
                       <div class="dropDownSelect2"></div>
                     </div>
@@ -514,23 +566,40 @@ Author : ASUS
                         <i class="fs-16 zmdi zmdi-minus"></i>
                       </div>
 
+<<<<<<< HEAD
                       <input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1" />
+=======
+                      <input
+                        class="mtext-104 cl3 txt-center num-product"
+                        type="number"
+                        name="num-product"
+                        value="1"
+                      />
+>>>>>>> main
 
                       <div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
                         <i class="fs-16 zmdi zmdi-plus"></i>
                       </div>
                     </div>
+<<<<<<< HEAD
 
                     <button
                       class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail"
                     >
                       Add to cart
                     </button>
+=======
+                    
+                    <a href="addToCart?product_id=${param.product_id}" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">Add to cart</a>
+                    
+                    
+>>>>>>> main
                   </div>
                 </div>
               </div>
 
               <!--  -->
+<<<<<<< HEAD
               <div class="flex-w flex-m p-l-100 p-t-40 respon7">
                 <div class="flex-m bor9 p-r-10 m-r-11">
                   <a
@@ -745,6 +814,11 @@ Author : ASUS
         <span class="stext-107 cl6 p-lr-25"> SKU: JAK-01 </span>
 
         <span class="stext-107 cl6 p-lr-25"> Categories: Jacket, Men </span>
+=======
+            </div>
+          </div>
+        </div>    
+>>>>>>> main
       </div>
     </section>
 
@@ -758,6 +832,7 @@ Author : ASUS
         <!-- Slide2 -->
         <div class="wrap-slick2">
           <div class="slick2">
+<<<<<<< HEAD
             <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
               <!-- Block2 -->
               <div class="block2">
@@ -1069,6 +1144,51 @@ Author : ASUS
                   All rights reserved.
                 </p>
 =======
+=======
+            <c:forEach items="${list_product_related}" var="product">
+              <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15 isotope-item ${product.brand}">
+                <!-- Block2 -->
+                <div class="block2">
+                  <div class="productid d-none">${product.product_id}</div>
+                  <div class="block2-pic hov-img0">
+                    <img src="${product.img}" alt="IMG-PRODUCT" />
+    
+                    <a
+                      href="#"
+                      class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"
+                    >
+                      Quick View
+                    </a>
+                  </div>
+    
+                  <div class="block2-txt flex-w flex-t p-t-14">
+                    <div class="block2-txt-child1 flex-col-l">
+                      <a href="detailProduct?product_id=${product.product_id}&profit_price=${product.profit_price}&product_description=${product.prouduct_description}&img=${product.img}&product_name=${product.product_name}&brand=${product.brand}&color=${product.color}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                        ${product.product_name}
+                      </a>
+    
+                      <span class="stext-105 cl3"> ${product.profit_price} </span>
+                      <span class="description_product d-none">${product.prouduct_description}</span>
+                    </div>
+    
+                    <div class="block2-txt-child2 flex-r p-t-3">
+                      <a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+                        <img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON" />
+                        <img
+                          class="icon-heart2 dis-block trans-04 ab-t-l"
+                          src="images/icons/icon-heart-02.png"
+                          alt="ICON"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </c:forEach>
+          </div>
+        </div>
+      </div>
+>>>>>>> main
     </section>
 
     <!-- Footer -->
@@ -1153,6 +1273,7 @@ Author : ASUS
     </div>
 
     <!-- Modal1 -->
+<<<<<<< HEAD
     <div class="wrap-modal1 js-modal1 p-t-60 p-b-20">
       <div class="overlay-modal1 js-hide-modal1"></div>
 
@@ -1382,6 +1503,11 @@ Author : ASUS
 		============================================ -->
 =======
 
+=======
+   
+    <c:import url="Modal.jsp" />
+    <script src="script/product.js"></script>
+>>>>>>> main
     <!--===============================================================================================-->
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
@@ -1459,8 +1585,19 @@ Author : ASUS
 
       $(".js-addcart-detail").each(function () {
         var nameProduct = $(this).parent().parent().parent().parent().find(".js-name-detail").html();
+<<<<<<< HEAD
         $(this).on("click", function () {
           swal(nameProduct, "is added to cart !", "success");
+=======
+        $(this).on("click", function (event) {
+          event.preventDefault();
+          swal(nameProduct, "is added to cart !", "success");
+          var addToCartLink = $(this).attr("href");
+          var quantity = document.querySelector('.num-product').value;
+          var size = document.querySelector('.js-select2').value;
+          var updateCartLink = addToCartLink + "&quantity="+ quantity +"&size=" + size;
+          window.location.href=updateCartLink;
+>>>>>>> main
         });
       });
     </script>
@@ -1482,7 +1619,10 @@ Author : ASUS
       });
     </script>
     <!--===============================================================================================-->
+<<<<<<< HEAD
 >>>>>>> 3b1241cdaf06d337f51e57fe5f0ec7b8a75e33f3
+=======
+>>>>>>> main
     <script src="js/main.js"></script>
   </body>
 </html>

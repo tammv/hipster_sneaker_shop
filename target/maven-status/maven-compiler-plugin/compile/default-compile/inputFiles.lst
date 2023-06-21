@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\ASUS\OneDrive\Desktop\Code 04-06\hipster_sneaker_shop - Copy\src\main\java\Control\ControlWeb\Reset.java
 C:\Users\ASUS\OneDrive\Desktop\Code 04-06\hipster_sneaker_shop - Copy\src\main\java\Control\DB\DBconnect.java
 C:\Users\ASUS\OneDrive\Desktop\Code 04-06\hipster_sneaker_shop - Copy\src\main\java\Control\DB\ProductDAO.java
@@ -24,3 +25,50 @@ C:\Users\ASUS\OneDrive\Desktop\Code 04-06\hipster_sneaker_shop - Copy\src\main\j
 C:\Users\ASUS\OneDrive\Desktop\Code 04-06\hipster_sneaker_shop - Copy\src\main\java\Control\ControlWeb\Send.java
 C:\Users\ASUS\OneDrive\Desktop\Code 04-06\hipster_sneaker_shop - Copy\src\main\java\Control\ControlWeb\Delete.java
 C:\Users\ASUS\OneDrive\Desktop\Code 04-06\hipster_sneaker_shop - Copy\src\main\java\Control\ControlWeb\SignUpServlet.java
+=======
+
+
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\Delete.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\ContentDAO.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\DeleteContentServlet.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Fee.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\DetailContent.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Cart.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\OrderItemDAO.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Content.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\ProductDAO.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Constants.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\Order.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\CartDAO.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\DeleteProductAdmin.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\CartUserDAO.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ListProduct.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\FeeDao.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Product.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\DetailProduct.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\UserDAO.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\processLink.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ContentServlet.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\Login.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\OrderDAO.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Account_Google.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Valid.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ProductServlet.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ForgotPass.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ProfileUser.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\LoginByGoogle.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\ProcessReset.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\DBconnect.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Product_Cart.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\Send.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\ProductDetailDAO.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\SignUpServlet.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\Reset.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\AddContent.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\Feature.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\AddToCart.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\ControlWeb\UpdateCart.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Model\Account_SignUp.java
+D:\Front-end\New folder\hipster_sneaker_shop\src\main\java\Control\DB\ProductDetailDAO.java
+
+>>>>>>> main

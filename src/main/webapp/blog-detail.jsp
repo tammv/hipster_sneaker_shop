@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+=======
+
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
+>>>>>>> main
 <%@ page session="true" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +15,23 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.png" />
     <!--===============================================================================================-->
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+=======
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+>>>>>>> main
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,6 +40,7 @@
       referrerpolicy="no-referrer"
     />
     <!--===============================================================================================-->
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css" />
@@ -33,6 +54,45 @@
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css" />
+=======
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/iconic/css/material-design-iconic-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/linearicons-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/perfect-scrollbar/perfect-scrollbar.css"
+    />
+>>>>>>> main
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -61,7 +121,13 @@
           <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
         </a>
 
+<<<<<<< HEAD
         <span class="stext-109 cl4"> 8 Inspiring Ways to Wear Dresses in the Winter </span>
+=======
+        <span class="stext-109 cl4">
+          Never Done Iterating
+        </span>
+>>>>>>> main
       </div>
     </div>
 
@@ -73,12 +139,23 @@
             <div class="p-r-45 p-r-0-lg">
               <!--  -->
               <div class="wrap-pic-w how-pos5-parent">
+<<<<<<< HEAD
                 <img src="images/blog-04.jpg" alt="IMG-BLOG" />
 
                 <div class="flex-col-c-m size-123 bg9 how-pos5">
                   <span class="ltext-107 cl2 txt-center"> 22 </span>
 
                   <span class="stext-109 cl3 txt-center"> Jan 2018 </span>
+=======
+
+                <img src=" ${content_choose.img}" alt="IMG-BLOG" />
+
+
+                <div class="flex-col-c-m size-123 bg9 how-pos5">
+                  <span class="ltext-107 cl2 txt-center"> 4 </span>
+
+                  <span class="stext-109 cl3 txt-center"> June 2023 </span>
+>>>>>>> main
                 </div>
               </div>
 
@@ -90,11 +167,16 @@
                   </span>
 
                   <span>
+<<<<<<< HEAD
                     22 Jan, 2018
+=======
+                    4 June, 2023
+>>>>>>> main
                     <span class="cl12 m-l-4 m-r-6">|</span>
                   </span>
 
                   <span>
+<<<<<<< HEAD
                     StreetStyle, Fashion, Couple
                     <span class="cl12 m-l-4 m-r-6">|</span>
                   </span>
@@ -120,6 +202,21 @@
                   blandit. Sed tempor magna sed congue auctor. Mauris eu turpis eget tortor ultricies elementum.
                   Phasellus vel placerat orci, a venenatis justo. Phasellus faucibus venenatis nisl vitae vestibulum.
                   Praesent id nibh arcu. Vivamus sagittis accumsan felis, quis vulputate
+=======
+                    StreetStyle, Fashion, New
+                    <span class="cl12 m-l-4 m-r-6"></span>
+                  </span>
+                </span>
+
+                <h4 class="ltext-109 cl2 p-b-28">
+
+                  ${content_choose.title}
+                </h4>
+
+                <p class="stext-117 cl6 p-b-26">
+                  ${content_choose.content}
+
+>>>>>>> main
                 </p>
               </div>
 
@@ -127,16 +224,32 @@
                 <span class="size-216 stext-116 cl8 p-t-4"> Tags </span>
 
                 <div class="flex-w size-217">
+<<<<<<< HEAD
                   <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
                     Streetstyle
                   </a>
 
                   <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
                     Crafts
+=======
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Streetstyle
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    New
+>>>>>>> main
                   </a>
                 </div>
               </div>
 
+<<<<<<< HEAD
               <!--  -->
               <div class="p-t-40">
                 <h5 class="mtext-113 cl2 p-b-12">Leave a Comment</h5>
@@ -172,6 +285,11 @@
                 </form>
               </div>
             </div>
+=======
+
+             
+
+>>>>>>> main
           </div>
 
           <div class="col-md-4 col-lg-3 p-b-80">
@@ -184,7 +302,13 @@
                   placeholder="Search"
                 />
 
+<<<<<<< HEAD
                 <button class="flex-c-m size-122 ab-t-r fs-18 cl4 hov-cl1 trans-04">
+=======
+                <button
+                  class="flex-c-m size-122 ab-t-r fs-18 cl4 hov-cl1 trans-04"
+                >
+>>>>>>> main
                   <i class="zmdi zmdi-search"></i>
                 </button>
               </div>
@@ -194,6 +318,7 @@
 
                 <ul>
                   <li class="bor18">
+<<<<<<< HEAD
                     <a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"> Fashion </a>
                   </li>
 
@@ -322,6 +447,49 @@
                       <span> December 2017 </span>
 
                       <span> (26) </span>
+=======
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Fashion
+                    </a>
+                  </li>
+
+                  <li class="bor18">
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Beauty
+                    </a>
+                  </li>
+
+                  <li class="bor18">
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Street Style
+                    </a>
+                  </li>
+
+                  <li class="bor18">
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Life Style
+                    </a>
+                  </li>
+
+                  <li class="bor18">
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      DIY & Crafts
+>>>>>>> main
                     </a>
                   </li>
                 </ul>
@@ -331,6 +499,7 @@
                 <h4 class="mtext-112 cl2 p-b-27">Tags</h4>
 
                 <div class="flex-w m-r--5">
+<<<<<<< HEAD
                   <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
                     Fashion
                   </a>
@@ -349,6 +518,41 @@
 
                   <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
                     Crafts
+=======
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Fashion
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Comfortable
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    New
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Streetstyle
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Trending
+>>>>>>> main
                   </a>
                 </div>
               </div>
@@ -375,7 +579,13 @@
               </li>
 
               <li class="p-b-10">
+<<<<<<< HEAD
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Converse </a>
+=======
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Converse
+                </a>
+>>>>>>> main
               </li>
 
               <li class="p-b-10">
@@ -392,11 +602,23 @@
 
             <ul>
               <li class="p-b-10">
+<<<<<<< HEAD
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Track Order </a>
               </li>
 
               <li class="p-b-10">
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Shipping </a>
+=======
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Track Order
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Shipping
+                </a>
+>>>>>>> main
               </li>
 
               <li class="p-b-10">
@@ -409,13 +631,20 @@
             <h4 class="stext-301 cl0 p-b-30">GET IN TOUCH</h4>
 
             <p class="stext-107 cl7 size-201">
+<<<<<<< HEAD
               Any questions? Let us know in store at 8th floor, 379 Ngu Hanh Son Da Nang or call us on
             </p>
             <p>012931233</p>
+=======
+              FPT University Da Nang, Urban area FPT City, Ngu Hanh Son, Da Nang
+            </p>
+            <p>0947481545</p>
+>>>>>>> main
           </div>
           <div class="col-sm-6 col-lg-3 p-b-50">
             <h4 class="stext-301 cl0 p-b-30">Subscribe</h4>
             <div class="p-t-27">
+<<<<<<< HEAD
               <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                 <i class="fa-brands fa-facebook"></i>
               </a>
@@ -425,6 +654,26 @@
               </a>
 
               <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+=======
+              <a
+                href="https://www.facebook.com/hipsterstore"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/thehipsterhouse/"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://www.tiktok.com"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
+>>>>>>> main
                 <i class="fa-brands fa-tiktok"></i>
               </a>
             </div>
@@ -477,6 +726,10 @@
       });
     </script>
     <!--===============================================================================================-->
+<<<<<<< HEAD
+=======
+    <script src="script/product.js"></script>
+>>>>>>> main
     <script src="js/main.js"></script>
   </body>
 </html>

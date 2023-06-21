@@ -4,14 +4,22 @@
  */
 package Control.ControlWeb;
 
+<<<<<<< HEAD
 import Control.DB.ProductDAO;
 import Control.DB.ProductDetailDAO;
+=======
+import Model.ProductDetailDAO;
+>>>>>>> main
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+<<<<<<< HEAD
+=======
+import java.sql.SQLException;
+>>>>>>> main
 
 /**
  *
@@ -19,6 +27,7 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 
 @WebServlet(urlPatterns = {"/delete"})
+<<<<<<< HEAD
 public class DeleteProductAdmin extends HttpServlet {
         @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -41,4 +50,21 @@ public class DeleteProductAdmin extends HttpServlet {
     }
 
 
+=======
+
+public class DeleteProductAdmin extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+            try {
+                
+                String product_id = request.getParameter("product_id");
+                ProductDetailDAO dao = new ProductDetailDAO();
+                dao.delete(product_id);
+                response.sendRedirect("listProduct");
+            } catch (SQLException | ClassNotFoundException e) {
+                   e.printStackTrace();
+            }
+        }
+      
+>>>>>>> main
 }

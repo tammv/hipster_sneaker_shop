@@ -214,11 +214,19 @@
   
                 <div class="block2-txt flex-w flex-t p-t-14">
                   <div class="block2-txt-child1 flex-col-l">
+<<<<<<< HEAD
                     <a href="product-detail.jsp" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
                       ${product.product_name}
                     </a>
   
                     <span class="stext-105 cl3"> ${product.profit_price} </span>
+=======
+                    <a href="detailProduct?product_id=${product.product_id}&profit_price=${product.profit_price}&product_description=${product.prouduct_description}&img=${product.img}&product_name=${product.product_name}&brand=${product.brand}&color=${product.color}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                      ${product.product_name}
+                    </a>
+  
+                    <span class="stext-105 cl3"> ${product.profit_price} $ </span>
+>>>>>>> main
                     <span class="description_product d-none">${product.prouduct_description}</span>
                   </div>
   
@@ -330,6 +338,7 @@
     </div>
 
     <!-- Modal1 -->
+<<<<<<< HEAD
     <div class="wrap-modal1 js-modal1 p-t-60 p-b-20">
       <div class="overlay-modal1 js-hide-modal1"></div>
       <div class="container">
@@ -423,6 +432,9 @@
         </div>
       </div>
     </div>
+=======
+    <c:import url="Modal.jsp" />
+>>>>>>> main
     <script src="script/product.js"></script>
     <!--===============================================================================================-->
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>

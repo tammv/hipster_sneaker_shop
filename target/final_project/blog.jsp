@@ -9,9 +9,23 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.png" />
     <!--===============================================================================================-->
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+=======
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+>>>>>>> main
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,6 +34,7 @@
       referrerpolicy="no-referrer"
     />
     <!--===============================================================================================-->
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css" />
@@ -33,6 +48,45 @@
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css" />
+=======
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/iconic/css/material-design-iconic-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/linearicons-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/perfect-scrollbar/perfect-scrollbar.css"
+    />
+>>>>>>> main
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -49,7 +103,14 @@
 <c:import url="Cart.jsp" />
 
     <!-- Title page -->
+<<<<<<< HEAD
     <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-02.jpg')">
+=======
+    <section
+      class="bg-img1 txt-center p-lr-15 p-tb-92"
+      style="background-image: url('images/bg-01.jpg')"
+    >
+>>>>>>> main
       <h2 class="ltext-105 cl0 txt-center">Blog</h2>
     </section>
 
@@ -62,25 +123,49 @@
               <!-- item blog -->
               <div class="p-b-63">
                 <a href="blog-detail.jsp" class="hov-img0 how-pos5-parent">
+<<<<<<< HEAD
                   <img src="images/blog-04.jpg" alt="IMG-BLOG" />
 
                   <div class="flex-col-c-m size-123 bg9 how-pos5">
                     <span class="ltext-107 cl2 txt-center"> 22 </span>
 
                     <span class="stext-109 cl3 txt-center"> Jan 2018 </span>
+=======
+                  <img src="images/blog-01.jpg" alt="IMG-BLOG" />
+
+                  <div class="flex-col-c-m size-123 bg9 how-pos5">
+                    <span class="ltext-107 cl2 txt-center"> 4 </span>
+
+                    <span class="stext-109 cl3 txt-center"> June 2023 </span>
+>>>>>>> main
                   </div>
                 </a>
 
                 <div class="p-t-32">
                   <h4 class="p-b-15">
+<<<<<<< HEAD
                     <a href="blog-detail.jsp" class="ltext-108 cl2 hov-cl1 trans-04">
                       8 Inspiring Ways to Wear Dresses in the Winter
+=======
+                    <a
+                      href="blog-detail.jsp"
+                      class="ltext-108 cl2 hov-cl1 trans-04"
+                    >
+                      Never Done Iterating
+>>>>>>> main
                     </a>
                   </h4>
 
                   <p class="stext-117 cl6">
+<<<<<<< HEAD
                     Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce
                     eget dictum tortor. Donec dictum vitae sapien eu varius
+=======
+                    Over the past four decades, the Pegasus went from a utility
+                    running shoe, to an afterthought, and is now one of Nike's
+                    most beloved staples. Explore the history of our most
+                    popular running shoe ever.
+>>>>>>> main
                   </p>
 
                   <div class="flex-w flex-sb-m p-t-18">
@@ -91,6 +176,7 @@
                       </span>
 
                       <span>
+<<<<<<< HEAD
                         StreetStyle, Fashion, Couple
                         <span class="cl12 m-l-4 m-r-6">|</span>
                       </span>
@@ -99,6 +185,17 @@
                     </span>
 
                     <a href="blog-detail.jsp" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
+=======
+                        StreetStyle, Fashion, New
+                        <span class="cl12 m-l-4 m-r-6"></span>
+                      </span>
+                    </span>
+
+                    <a
+                      href="blog-detail.jsp"
+                      class="stext-101 cl2 hov-cl1 trans-04 m-tb-10"
+                    >
+>>>>>>> main
                       Continue Reading
 
                       <i class="fa fa-long-arrow-right m-l-9"></i>
@@ -110,25 +207,48 @@
               <!-- item blog -->
               <div class="p-b-63">
                 <a href="blog-detail.jsp" class="hov-img0 how-pos5-parent">
+<<<<<<< HEAD
                   <img src="images/blog-05.jpg" alt="IMG-BLOG" />
 
                   <div class="flex-col-c-m size-123 bg9 how-pos5">
                     <span class="ltext-107 cl2 txt-center"> 18 </span>
 
                     <span class="stext-109 cl3 txt-center"> Jan 2018 </span>
+=======
+                  <img src="images/blog-02.jpg" alt="IMG-BLOG" />
+
+                  <div class="flex-col-c-m size-123 bg9 how-pos5">
+                    <span class="ltext-107 cl2 txt-center"> 6 </span>
+
+                    <span class="stext-109 cl3 txt-center"> June 2023 </span>
+>>>>>>> main
                   </div>
                 </a>
 
                 <div class="p-t-32">
                   <h4 class="p-b-15">
+<<<<<<< HEAD
                     <a href="blog-detail.jsp" class="ltext-108 cl2 hov-cl1 trans-04">
                       The Great Big List of Men’s Gifts for the Holidays
+=======
+                    <a
+                      href="blog-detail.jsp"
+                      class="ltext-108 cl2 hov-cl1 trans-04"
+                    >
+                      Hip Hop's Superstar: How Music Influenced Sneaker Style
+>>>>>>> main
                     </a>
                   </h4>
 
                   <p class="stext-117 cl6">
+<<<<<<< HEAD
                     Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce
                     eget dictum tortor. Donec dictum vitae sapien eu varius
+=======
+                    Since entering the hip-hop scene in its early stages, adidas
+                    has evolved alongside the community. As hip-hop culture so
+                    have the Superstars.
+>>>>>>> main
                   </p>
 
                   <div class="flex-w flex-sb-m p-t-18">
@@ -139,6 +259,7 @@
                       </span>
 
                       <span>
+<<<<<<< HEAD
                         StreetStyle, Fashion, Couple
                         <span class="cl12 m-l-4 m-r-6">|</span>
                       </span>
@@ -147,6 +268,17 @@
                     </span>
 
                     <a href="blog-detail.jsp" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
+=======
+                        StreetStyle, Trending
+                        <span class="cl12 m-l-4 m-r-6"></span>
+                      </span>
+                    </span>
+
+                    <a
+                      href="blog-detail.jsp"
+                      class="stext-101 cl2 hov-cl1 trans-04 m-tb-10"
+                    >
+>>>>>>> main
                       Continue Reading
 
                       <i class="fa fa-long-arrow-right m-l-9"></i>
@@ -158,25 +290,46 @@
               <!-- item blog -->
               <div class="p-b-63">
                 <a href="blog-detail.jsp" class="hov-img0 how-pos5-parent">
+<<<<<<< HEAD
                   <img src="images/blog-06.jpg" alt="IMG-BLOG" />
 
                   <div class="flex-col-c-m size-123 bg9 how-pos5">
                     <span class="ltext-107 cl2 txt-center"> 16 </span>
 
                     <span class="stext-109 cl3 txt-center"> Jan 2018 </span>
+=======
+                  <img src="images/blog-03.jpg" alt="IMG-BLOG" />
+
+                  <div class="flex-col-c-m size-123 bg9 how-pos5">
+                    <span class="ltext-107 cl2 txt-center"> 8 </span>
+
+                    <span class="stext-109 cl3 txt-center"> June 2023 </span>
+>>>>>>> main
                   </div>
                 </a>
 
                 <div class="p-t-32">
                   <h4 class="p-b-15">
+<<<<<<< HEAD
                     <a href="blog-detail.jsp" class="ltext-108 cl2 hov-cl1 trans-04">
                       5 Winter-to-Spring Fashion Trends to Try Now
+=======
+                    <a
+                      href="blog-detail.jsp"
+                      class="ltext-108 cl2 hov-cl1 trans-04"
+                    >
+                    The Vans Knu Skool
+>>>>>>> main
                     </a>
                   </h4>
 
                   <p class="stext-117 cl6">
+<<<<<<< HEAD
                     Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce
                     eget dictum tortor. Donec dictum vitae sapien eu varius
+=======
+                    A Refresh of the Classic Old Skool™ Silhouette.
+>>>>>>> main
                   </p>
 
                   <div class="flex-w flex-sb-m p-t-18">
@@ -187,6 +340,7 @@
                       </span>
 
                       <span>
+<<<<<<< HEAD
                         StreetStyle, Fashion, Couple
                         <span class="cl12 m-l-4 m-r-6">|</span>
                       </span>
@@ -195,6 +349,17 @@
                     </span>
 
                     <a href="blog-detail.jsp" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
+=======
+                        Comfortable, Fashion
+                        <span class="cl12 m-l-4 m-r-6"></span>
+                      </span>
+                    </span>
+
+                    <a
+                      href="blog-detail.jsp"
+                      class="stext-101 cl2 hov-cl1 trans-04 m-tb-10"
+                    >
+>>>>>>> main
                       Continue Reading
 
                       <i class="fa fa-long-arrow-right m-l-9"></i>
@@ -205,9 +370,22 @@
 
               <!-- Pagination -->
               <div class="flex-l-m flex-w w-full p-t-10 m-lr--7">
+<<<<<<< HEAD
                 <a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7 active-pagination1"> 1 </a>
 
                 <a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7"> 2 </a>
+=======
+                <a
+                  href="#"
+                  class="flex-c-m how-pagination1 trans-04 m-all-7 active-pagination1"
+                >
+                  1
+                </a>
+
+                <a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7">
+                  2
+                </a>
+>>>>>>> main
               </div>
             </div>
           </div>
@@ -222,7 +400,13 @@
                   placeholder="Search"
                 />
 
+<<<<<<< HEAD
                 <button class="flex-c-m size-122 ab-t-r fs-18 cl4 hov-cl1 trans-04">
+=======
+                <button
+                  class="flex-c-m size-122 ab-t-r fs-18 cl4 hov-cl1 trans-04"
+                >
+>>>>>>> main
                   <i class="zmdi zmdi-search"></i>
                 </button>
               </div>
@@ -232,6 +416,7 @@
 
                 <ul>
                   <li class="bor18">
+<<<<<<< HEAD
                     <a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"> Fashion </a>
                   </li>
 
@@ -360,6 +545,49 @@
                       <span> December 2017 </span>
 
                       <span> (26) </span>
+=======
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Fashion
+                    </a>
+                  </li>
+
+                  <li class="bor18">
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Beauty
+                    </a>
+                  </li>
+
+                  <li class="bor18">
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Street Style
+                    </a>
+                  </li>
+
+                  <li class="bor18">
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      Life Style
+                    </a>
+                  </li>
+
+                  <li class="bor18">
+                    <a
+                      href="#"
+                      class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4"
+                    >
+                      New
+>>>>>>> main
                     </a>
                   </li>
                 </ul>
@@ -369,6 +597,7 @@
                 <h4 class="mtext-112 cl2 p-b-27">Tags</h4>
 
                 <div class="flex-w m-r--5">
+<<<<<<< HEAD
                   <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
                     Fashion
                   </a>
@@ -387,6 +616,41 @@
 
                   <a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
                     Crafts
+=======
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Fashion
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Comfortable
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    New
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Streetstyle
+                  </a>
+
+                  <a
+                    href="#"
+                    class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+                  >
+                    Trending
+>>>>>>> main
                   </a>
                 </div>
               </div>
@@ -413,7 +677,13 @@
               </li>
 
               <li class="p-b-10">
+<<<<<<< HEAD
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Converse </a>
+=======
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Converse
+                </a>
+>>>>>>> main
               </li>
 
               <li class="p-b-10">
@@ -430,11 +700,23 @@
 
             <ul>
               <li class="p-b-10">
+<<<<<<< HEAD
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Track Order </a>
               </li>
 
               <li class="p-b-10">
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Shipping </a>
+=======
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Track Order
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Shipping
+                </a>
+>>>>>>> main
               </li>
 
               <li class="p-b-10">
@@ -447,13 +729,20 @@
             <h4 class="stext-301 cl0 p-b-30">GET IN TOUCH</h4>
 
             <p class="stext-107 cl7 size-201">
+<<<<<<< HEAD
               Any questions? Let us know in store at 8th floor, 379 Ngu Hanh Son Da Nang or call us on
             </p>
             <p>012931233</p>
+=======
+              FPT University Da Nang, Urban area FPT City, Ngu Hanh Son, Da Nang
+            </p>
+            <p>0947481545</p>
+>>>>>>> main
           </div>
           <div class="col-sm-6 col-lg-3 p-b-50">
             <h4 class="stext-301 cl0 p-b-30">Subscribe</h4>
             <div class="p-t-27">
+<<<<<<< HEAD
               <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                 <i class="fa-brands fa-facebook"></i>
               </a>
@@ -463,6 +752,26 @@
               </a>
 
               <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+=======
+              <a
+                href="https://www.facebook.com/hipsterstore"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/thehipsterhouse/"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://www.tiktok.com"
+                class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+              >
+>>>>>>> main
                 <i class="fa-brands fa-tiktok"></i>
               </a>
             </div>
@@ -515,6 +824,10 @@
       });
     </script>
     <!--===============================================================================================-->
+<<<<<<< HEAD
+=======
+    <script src="script/product.js"></script>
+>>>>>>> main
     <script src="js/main.js"></script>
   </body>
 </html>
