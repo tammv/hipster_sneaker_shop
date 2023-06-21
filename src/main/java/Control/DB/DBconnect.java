@@ -8,17 +8,18 @@ import java.sql.SQLException;
 public class DBconnect {
     
 
-    public static Connection makeConnection() throws ClassNotFoundException, SQLException{
-        try{
-            String connectionUrl = "jdbc:sqlserver://LAPTOP-H06LKF92\\SQLEXPRESS:1433;databaseName=Final_Project;User=sa;Password=12345;encrypt=true;trustServerCertificate=true";
+    public static Connection makeConnection() throws ClassNotFoundException {
+        try {
+            String url = "jdbc:sqlserver://localhost:1433;encrypt=true;databaseName=Final_Project;trustServerCertificate=true";
+            String username = "sa";
+            String password = "sa";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection con = DriverManager.getConnection(connectionUrl);
-            System.out.println("da ket noi db");
+            Connection con = DriverManager.getConnection(url, username, password);
             return con;
-        }catch(ClassNotFoundException | SQLException ex){
-            System.out.println(ex);
+        } catch (SQLException e) {
+            e.getMessage();
+            return null;
         }
-        return null;
+    }
 }
 
-}
