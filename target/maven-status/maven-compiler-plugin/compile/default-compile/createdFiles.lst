@@ -10,6 +10,7 @@ Control\Feature.class
 Control\ControlWeb\Send$1.class
 Model\Account_Google.class
 Control\ControlWeb\ForgotPass.class
+Control\ControlWeb\ChartServlet.class
 Control\ControlWeb\Order.class
 Control\ControlWeb\Send$3.class
 Control\DB\FeeDao.class
@@ -23,6 +24,7 @@ Control\DB\ProductDAO.class
 Model\Cart.class
 Model\Constants.class
 Model\Product.class
+org\jfree\chart\ChartUtilities.class
 Control\ControlWeb\LoginByGoogle.class
 Control\DB\ProductDetailDAO.class
 Control\ControlWeb\DetailProduct.class
@@ -33,4 +35,7 @@ Control\ControlWeb\Send$2.class
 Control\ControlWeb\SignUpServlet.class
 Control\ControlWeb\AddToCart.class
 Model\Valid.class
+Control\ControlWeb\ListProduct.class
+Model\ProductDetailDAO.class
+Control\ControlWeb\DeleteProductAdmin.class
 Model\Account_SignUp.class
