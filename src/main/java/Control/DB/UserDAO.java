@@ -147,6 +147,8 @@ public class UserDAO {
         return null;
     }
 
+<<<<<<< HEAD
+=======
     public void editProfile(String email, String name, String address, String username) throws SQLException, ClassNotFoundException{
         try {
             String query = "UPDATE [dbo].[User_Table] SET [email] = ?,[fullname] = ?,[address] = ? WHERE [username]=?";
@@ -162,5 +164,6 @@ public class UserDAO {
         }
     }
 
+>>>>>>> main
 }
 

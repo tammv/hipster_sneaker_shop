@@ -15,12 +15,20 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<<<<<<< HEAD
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+=======
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
  
+>>>>>>> main
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -54,11 +62,15 @@
         <artifactId>smtp</artifactId>
         <version>1.4.5</version>
     </dependency>
+<<<<<<< HEAD
+
+=======
      <dependency>
     <groupId>org.jfree</groupId>
     <artifactId>jfreechart</artifactId>
     <version>1.5.3</version>
 </dependency>
+>>>>>>> main
 
 
     <!-- https://mvnrepository.com/artifact/commons-collections/commons-collections -->
@@ -98,12 +110,16 @@
       <artifactId>mssql-jdbc</artifactId>
       <version>12.2.0.jre11</version>
     </dependency>
+<<<<<<< HEAD
+
+=======
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
       <version>2.5</version>
       <type>jar</type>
     </dependency>
+>>>>>>> main
   </dependencies>
 
   <build>

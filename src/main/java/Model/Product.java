@@ -12,12 +12,18 @@ public class Product {
     private int quantity;
     private Date created_at;
     private Date update_at;
+<<<<<<< HEAD
+
+    public Product(int product_id, String product_name,String brand ,String prouduct_description, float profit_price, String img,
+            int quantity, Date created_at, Date update_at) {
+=======
     private String color;
 
     
 
     public Product(int product_id, String product_name,String brand ,String prouduct_description, float profit_price, String img,
             int quantity, Date created_at, Date update_at, String color) {
+>>>>>>> main
         this.product_id = product_id;
         this.product_name = product_name;
         this.brand = brand;
@@ -27,7 +33,10 @@ public class Product {
         this.quantity = quantity;
         this.created_at = created_at;
         this.update_at = update_at;
+<<<<<<< HEAD
+=======
         this.color = color;
+>>>>>>> main
     }
 
     public String getBrand() {
@@ -117,6 +126,8 @@ public class Product {
         this.update_at = update_at;
     }
 
+<<<<<<< HEAD
+=======
     public String getColor() {
         return color;
     }
@@ -124,6 +135,7 @@ public class Product {
     public void setColor(String color) {
         this.color = color;
     }
+>>>>>>> main
 
     
 

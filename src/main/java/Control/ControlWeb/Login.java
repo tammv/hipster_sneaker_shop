@@ -6,11 +6,17 @@ import java.util.List;
 
 import Control.DB.CartDAO;
 import Control.DB.CartUserDAO;
+<<<<<<< HEAD
+import Control.DB.UserDAO;
+import Model.Account_SignUp;
+import Model.Cart;
+=======
 import Control.DB.FeeDao;
 import Control.DB.UserDAO;
 import Model.Account_SignUp;
 import Model.Cart;
 import Model.Fee;
+>>>>>>> main
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
@@ -42,10 +48,14 @@ public class Login extends HttpServlet{
                 int cart_id = new CartDAO().getCartId(username);
                 cart.setCartId(cart_id);
                 cart.setList_product(new CartUserDAO().getListProductInCart(cart_id));
+<<<<<<< HEAD
+                session.setAttribute("cart_user", cart);
+=======
 
                 List<Fee> listFee = new FeeDao().getListFee();
                 session.setAttribute("cart_user", cart);
                 session.setAttribute("list_fee", listFee);
+>>>>>>> main
                 check = true;
                 break;
             }

@@ -10,11 +10,17 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 import Control.DB.CartDAO;
+<<<<<<< HEAD
+import Control.DB.UserDAO;
+import Model.Account_Google;
+import Model.Account_SignUp;
+=======
 import Control.DB.CartUserDAO;
 import Control.DB.UserDAO;
 import Model.Account_Google;
 import Model.Account_SignUp;
 import Model.Cart;
+>>>>>>> main
 import Model.Constants;
 
 import jakarta.servlet.RequestDispatcher;
@@ -23,8 +29,11 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+<<<<<<< HEAD
+=======
 import jakarta.servlet.http.HttpSession;
 
+>>>>>>> main
 import org.apache.http.client.ClientProtocolException;
 
 
@@ -32,15 +41,23 @@ import org.apache.http.client.ClientProtocolException;
 @WebServlet(urlPatterns = {"/GoogleLogin"})
 public class LoginByGoogle extends HttpServlet {
     
+<<<<<<< HEAD
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException, ClassNotFoundException, SQLException {
+		String code = request.getParameter("code");
+=======
     protected void processRequest(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException, ClassNotFoundException, SQLException {
 		String code = req.getParameter("code");
+>>>>>>> main
 		String accessToken = getToken(code);
 		Account_Google acc = getUserInfo(accessToken);
 		if (!new UserDAO().checkEmail(acc)){
 			new UserDAO().insertAccgmail(acc);
 			new CartDAO().insertCartTable(acc.getEmail());
 		}
+<<<<<<< HEAD
+=======
 		HttpSession session = req.getSession();
 		session.setAttribute("user", acc.getEmail());
 
@@ -49,6 +66,7 @@ public class LoginByGoogle extends HttpServlet {
 		cart.setCartId(cart_id);
 		cart.setList_product(new CartUserDAO().getListProductInCart(cart_id));
 		session.setAttribute("cart_user", cart);
+>>>>>>> main
 		
 		
 	}
@@ -86,7 +104,11 @@ public class LoginByGoogle extends HttpServlet {
 			e.printStackTrace();
 		}
 
+<<<<<<< HEAD
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.html");
+=======
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("Home.jsp");
+>>>>>>> main
 		requestDispatcher.forward(request, response);
 	}
 }

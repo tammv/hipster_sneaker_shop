@@ -16,6 +16,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 import java.util.List;
 
+<<<<<<< HEAD
+/**
+ *
+ * @author ASUS
+ */
+=======
+>>>>>>> main
 
 @WebServlet(urlPatterns = {"/listProduct"})
 public class ListProduct extends HttpServlet {
@@ -61,7 +68,11 @@ public class ListProduct extends HttpServlet {
         try {
              List<Product> list = new ProductDAO().getListProduct();
             request.setAttribute("list", list);
+<<<<<<< HEAD
+            request.getRequestDispatcher("product-list.jsp").forward(request, response);
+=======
             request.getRequestDispatcher("admin-product-list.jsp").forward(request, response);
+>>>>>>> main
         } catch (SQLException | ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

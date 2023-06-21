@@ -217,6 +217,28 @@
     $('.btn-num-product-down').on('click', function(){
         var input = $(this).next();
         var row = input.closest('.table_row');
+<<<<<<< HEAD
+        var column3 = parseFloat(row.find('.column-3').text());
+        var column5 = row.find('.column-5');
+        var numProduct = Number($(this).next().val());
+        if(numProduct > 0) {
+            $(this).next().val(numProduct - 1);
+            column5 = column3 * $(this).next().val();
+
+        };
+    });
+
+    $('.btn-num-product-up').on('click', function(){
+        var input = $(this).next();
+        var row = input.closest('.table_row');
+        var column3 = parseFloat(row.find('.column-3').text());
+        var column5 = row.find('.column-5');
+        var numProduct = Number($(this).next().val());
+        $(this).prev().val(numProduct + 1);
+        column5 = column3 * $(this).next().val();
+
+    });
+=======
         var column3 = parseFloat(row.find('.price_product').text());
         var column5 = row.find('.column-5');
         var numProduct = Number(input.val());
@@ -237,6 +259,7 @@
         input.val(numProduct + 1);
         column5.text((column3 * (numProduct + 1)).toFixed(2)+"$");
       });
+>>>>>>> main
 
     /*==================================================================
     [ Rating ]*/
