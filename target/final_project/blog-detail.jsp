@@ -1,4 +1,6 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page session="true" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -107,7 +109,9 @@
             <div class="p-r-45 p-r-0-lg">
               <!--  -->
               <div class="wrap-pic-w how-pos5-parent">
-                <img src="images/blog-01.jpg" alt="IMG-BLOG" />
+
+                <img src=" ${content_choose.img}" alt="IMG-BLOG" />
+
 
                 <div class="flex-col-c-m size-123 bg9 how-pos5">
                   <span class="ltext-107 cl2 txt-center"> 4 </span>
@@ -135,33 +139,13 @@
                 </span>
 
                 <h4 class="ltext-109 cl2 p-b-28">
-                  Never Done Iterating
+
+                  ${content_choose.title}
                 </h4>
 
                 <p class="stext-117 cl6 p-b-26">
-                  Nike Dunk Low Next Nature is a groundbreaking sneaker that
-                  seamlessly blends urban style with elements inspired by the
-                  natural world. Its design takes cues from the beauty of
-                  nature, incorporating earthy tones and sustainable materials
-                  like recycled polyester. The shoe features innovative design
-                  elements, including a leaf-inspired pattern on the Swoosh logo
-                  and a rugged outsole for added traction. Comfort and
-                  performance are not compromised, with a cushioned midsole
-                  providing support and impact absorption. The Dunk Low Next
-                  Nature encourages wearers to embrace exploration and find
-                  inspiration in the outdoors. It represents the perfect fusion
-                  of style, sustainability, and the spirit of adventure.
-                </p>
+                  ${content_choose.content}
 
-                <p class="stext-117 cl6 p-b-26">
-                  The Nike Dunk Low Next Nature is more than just a sneaker;
-                  it's a testament to the harmonious relationship between urban
-                  lifestyle and the great outdoors. Through its nature-inspired
-                  design, sustainable materials, and performance-driven
-                  features, this shoe embodies the spirit of adventure and
-                  invites wearers to connect with the world around them. Step
-                  into the Nike Dunk Low Next Nature and embark on a journey of
-                  style, comfort, and exploration.
                 </p>
               </div>
 
@@ -185,49 +169,9 @@
                 </div>
               </div>
 
-              <!--  -->
-              <div class="p-t-40">
-                <h5 class="mtext-113 cl2 p-b-12">Leave a Comment</h5>
 
-                <p class="stext-107 cl6 p-b-40">
-                  Your email address will not be published. Required fields are
-                  marked *
-                </p>
+             
 
-                <form>
-                  <div class="bor19 m-b-20">
-                    <textarea
-                      class="stext-111 cl2 plh3 size-124 p-lr-18 p-tb-15"
-                      name="cmt"
-                      placeholder="Comment..."
-                    ></textarea>
-                  </div>
-
-                  <div class="bor19 size-218 m-b-20">
-                    <input
-                      class="stext-111 cl2 plh3 size-116 p-lr-18"
-                      type="text"
-                      name="name"
-                      placeholder="Name *"
-                    />
-                  </div>
-
-                  <div class="bor19 size-218 m-b-20">
-                    <input
-                      class="stext-111 cl2 plh3 size-116 p-lr-18"
-                      type="text"
-                      name="email"
-                      placeholder="Email *"
-                    />
-                  </div>
-                  <button
-                    class="flex-c-m stext-101 cl0 size-125 bg3 bor2 hov-btn3 p-lr-15 trans-04"
-                  >
-                    Post Comment
-                  </button>
-                </form>
-              </div>
-            </div>
           </div>
 
           <div class="col-md-4 col-lg-3 p-b-80">
