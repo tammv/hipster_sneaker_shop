@@ -9,17 +9,22 @@ public class DBconnect {
     
 
     public static Connection makeConnection() throws ClassNotFoundException {
+        String namedatabase = "Final_Project";
         try {
-            String url = "jdbc:sqlserver://localhost:1433;encrypt=true;databaseName=Final_Project;trustServerCertificate=true";
-            String username = "sa";
-            String password = "sa";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection con = DriverManager.getConnection(url, username, password);
+            String connectionUrl = "jdbc:sqlserver://MSI\\SQLEXPRESS:1433;databaseName=" + namedatabase + "; Encrypt=false;";
+            String user = "sa";
+            String password = "123456";
+            Connection con = DriverManager.getConnection(connectionUrl, user, password);
             return con;
-        } catch (SQLException e) {
-            e.getMessage();
-            return null;
+        } catch (Exception e) {
+
+            e.printStackTrace();
         }
+        return null;
+
+
+ 
     }
 }
 
