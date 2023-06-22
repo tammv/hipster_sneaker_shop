@@ -25,12 +25,19 @@ public class AddToCart extends HttpServlet {
         int quantity = Integer.parseInt(req.getParameter("quantity"));
         int size =  Integer.parseInt(req.getParameter("size"));
 
+<<<<<<< HEAD
+=======
         HttpSession session = req.getSession();
         if (session.getAttribute("user") != null)
+>>>>>>> main
         
         try {
             Product product = new ProductDAO().getProduct(product_id);
             Product_Cart product_Cart = new Product_Cart(product, size, quantity);
+<<<<<<< HEAD
+            HttpSession session = req.getSession();
+=======
+>>>>>>> main
             Cart cart = (Cart) session.getAttribute("cart_user");
             cart.addP(product_Cart);
             session.setAttribute("cart_user", cart);
@@ -43,10 +50,13 @@ public class AddToCart extends HttpServlet {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+<<<<<<< HEAD
+=======
         else{
             resp.sendRedirect("Login_SignUp.jsp");
         }
         
+>>>>>>> main
         
         
         

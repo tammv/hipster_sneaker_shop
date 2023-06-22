@@ -1,7 +1,10 @@
 package Control.ControlWeb;
 
+<<<<<<< HEAD
+=======
 import java.sql.SQLException;
 import java.util.List;
+>>>>>>> main
 import java.util.Properties;
 import javax.mail.Authenticator;
 import javax.mail.Message;
@@ -12,9 +15,15 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+<<<<<<< HEAD
+
+
+import Model.Account_SignUp;
+=======
 import Control.DB.UserDAO;
 import Model.Account_SignUp;
 import Model.Product_Cart;
+>>>>>>> main
 
 public class Send {
    final String username ="hipsterstore08@gmail.com";
@@ -95,6 +104,8 @@ public class Send {
             e.printStackTrace();
         }
     }
+<<<<<<< HEAD
+=======
 
     public void SendOrder(String code, List<Product_Cart> list_order_cart, String user, String address, float total) throws ClassNotFoundException, SQLException {
         String email = new UserDAO().getEmailByUsername(user);
@@ -195,4 +206,5 @@ public class Send {
             e.printStackTrace();
         }
     }
+>>>>>>> main
 }
