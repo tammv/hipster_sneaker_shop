@@ -1,4 +1,4 @@
-##Hipster Shoe Shop - Java Web Application
+**Hipster Shoe Shop - Java Web Application**
 Hipster Shoe Shop
 
 Welcome to Hipster Shoe Shop! This is a Java web application for an online shoe shop where users can browse and purchase trendy shoes. This README will guide you on how to set up and run the project using NetBeans and Tomcat.
