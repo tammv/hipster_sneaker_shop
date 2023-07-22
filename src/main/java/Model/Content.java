@@ -2,7 +2,7 @@ package Model;
 
 import java.sql.Date;
 
-import Control.ControlWeb.processLink;
+
 
 public class Content {
     
@@ -13,9 +13,9 @@ public class Content {
     private Date created_at;
     private Date update_at;
     private String detail_title;
-    private String id;
+    private int id;
 
-     public Content(String username, String title, String img, String content, Date created_at, Date update_at, String detail_title, String id) {
+     public Content(String username, String title, String img, String content, Date created_at, Date update_at, String detail_title, int id) {
         this.username = username;
         this.title = title;
         this.img = img;
@@ -82,11 +82,11 @@ public class Content {
         this.detail_title = detail_title;
     }
     
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

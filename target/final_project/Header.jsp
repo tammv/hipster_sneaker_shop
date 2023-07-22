@@ -1,15 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<<<<<<< HEAD
-<%@ page session="true" %>
-
-
-    <c:set var ="list_size" value="${sessionScope.cart_user.list_product.size()}"/>
-=======
   <%@ page session="true" %>
 
 
     <c:set var="list_size" value="${sessionScope.cart_user.list_product.size()}" />
->>>>>>> main
     <!-- Header desktop -->
     <div class="container-menu-desktop">
       <div class="wrap-menu-desktop">
@@ -28,21 +21,11 @@
 
               <li>
                 <a href="product">Shop</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Nike</a></li>
-                  <li><a href="#">Adidas</a></li>
-                  <li><a href="#">Converse</a></li>
-                </ul>
+                
               </li>
 
               <li>
-<<<<<<< HEAD
-                <a href="blog.jsp">Blog</a>
-=======
-
                 <a href="blog">Blog</a>
-
->>>>>>> main
               </li>
 
               <li>
@@ -61,25 +44,6 @@
               <i class="zmdi zmdi-search"></i>
             </div>
             <!-- chua login sẽ ẩn đi  -->
-<<<<<<< HEAD
-            <div
-              class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
-              data-notify= "${list_size}"  
-            > 
-            <!-- so lượng item trong cart -->
-              <i class="zmdi zmdi-shopping-cart"></i>
-            </div>
-           
-            <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22" data-toggle="dropdown">
-              <i class="fa-solid fa-user-large"></i>
-            </a>
-          
-          <ul class="dropdown-menu">
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Sign Up</a></li>
-              
-          </ul>
-=======
             <c:choose>
               <c:when test="${sessionScope.user != nul}">
                 <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
@@ -87,7 +51,7 @@
                   <!-- so lượng item trong cart -->
                   <i class="zmdi zmdi-shopping-cart"></i>
                 </div>
-                <a href="profile.jsp" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22">
+                <a href="profile" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22">
                   <i class="fa-solid fa-user-large"></i>
                   <span class="fs-15">${sessionScope.user}</span>
                 </a>
@@ -100,13 +64,12 @@
                 </a>
 
                 <ul class="dropdown-menu">
-                  <li><a href="Login_SignUp.jsp">Login</a></li>
+                  <li><a href="checkCookie">Login</a></li>
                   <li><a href="Login_SignUp.jsp">Sign Up</a></li>
                 </ul>
               </c:otherwise>
             </c:choose>
 
->>>>>>> main
           </div>
         </nav>
       </div>
@@ -125,18 +88,6 @@
           <i class="zmdi zmdi-search"></i>
         </div>
 
-<<<<<<< HEAD
-        <div
-          class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
-          data-notify="${list_size}"
-        >
-          <i class="zmdi zmdi-shopping-cart"></i>
-        </div>
-
-        <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10">
-          <i class="fa-solid fa-user-large"></i>
-        </a>
-=======
         <c:choose>
               <c:when test="${sessionScope.user != nul}">
                 <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
@@ -157,12 +108,11 @@
                 </a>
 
                 <ul class="dropdown-menu">
-                  <li><a href="Login_SignUp.jsp">Login</a></li>
+                  <li><a href="checkCookie">Login</a></li>
                   <li><a href="Login_SignUp.jsp">Sign Up</a></li>
                 </ul>
               </c:otherwise>
             </c:choose>
->>>>>>> main
       </div>
 
       <!-- Button show menu -->
@@ -182,18 +132,14 @@
 
         <li>
           <a href="product">Shop</a>
-          <ul class="sub-menu-m">
-            <li><a href="#">Nike </a></li>
-            <li><a href="#">Adidas</a></li>
-            <li><a href="#">Converse</a></li>
-          </ul>
+          
           <span class="arrow-main-menu-m">
             <i class="fa fa-angle-right" aria-hidden="true"></i>
           </span>
         </li>
 
         <li>
-          <a href="blog.jsp">Blog</a>
+          <a href="blog">Blog</a>
         </li>
 
         <li>
@@ -213,15 +159,11 @@
           <img src="images/icons/icon-close2.png" alt="CLOSE" />
         </button>
 
-        <form class="wrap-search-header flex-w p-l-15">
+        <form action="Search" method="post" class="wrap-search-header flex-w p-l-15">
           <button class="flex-c-m trans-04">
             <i class="zmdi zmdi-search"></i>
           </button>
           <input class="plh3" type="text" name="search" placeholder="Search..." />
         </form>
       </div>
-<<<<<<< HEAD
     </div>
-=======
-    </div>
->>>>>>> main

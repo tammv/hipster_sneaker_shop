@@ -1,6 +1,8 @@
 package Model;
 
 import java.sql.Date;
+import java.util.List;
+import java.util.Map;
 
 public class Product {
     private int product_id;
@@ -12,18 +14,32 @@ public class Product {
     private int quantity;
     private Date created_at;
     private Date update_at;
-<<<<<<< HEAD
-
-    public Product(int product_id, String product_name,String brand ,String prouduct_description, float profit_price, String img,
-            int quantity, Date created_at, Date update_at) {
-=======
     private String color;
+    private Map<Integer, Integer> sizeAndQuantitysize;
+    private Price price;
+    private List<Price> historyChange;
 
     
 
-    public Product(int product_id, String product_name,String brand ,String prouduct_description, float profit_price, String img,
-            int quantity, Date created_at, Date update_at, String color) {
->>>>>>> main
+    public List<Price> getHistoryChange() {
+        return historyChange;
+    }
+
+    public void setHistoryChange(List<Price> historyChange) {
+        this.historyChange = historyChange;
+    }
+
+    public Price getPrice() {
+        return price;
+    }
+
+    public void setPrice(Price price) {
+        this.price = price;
+    }
+
+    public Product(int product_id, String product_name, String brand, String prouduct_description, float profit_price,
+            String img, int quantity, Date created_at, Date update_at, String color,
+            Map<Integer, Integer> sizeAndQuantitysize) {
         this.product_id = product_id;
         this.product_name = product_name;
         this.brand = brand;
@@ -33,10 +49,30 @@ public class Product {
         this.quantity = quantity;
         this.created_at = created_at;
         this.update_at = update_at;
-<<<<<<< HEAD
-=======
         this.color = color;
->>>>>>> main
+        this.sizeAndQuantitysize = sizeAndQuantitysize;
+    }
+
+    public Map<Integer, Integer> getSizeAndQuantitysize() {
+        return sizeAndQuantitysize;
+    }
+
+    public void setSizeAndQuantitysize(Map<Integer, Integer> sizeAndQuantitysize) {
+        this.sizeAndQuantitysize = sizeAndQuantitysize;
+    }
+
+    public Product(int product_id, String product_name,String brand ,String prouduct_description, float profit_price, String img,
+            int quantity, Date created_at, Date update_at, String color) {
+        this.product_id = product_id;
+        this.product_name = product_name;
+        this.brand = brand;
+        this.prouduct_description = prouduct_description;
+        this.profit_price = profit_price;
+        this.img = img;
+        this.quantity = quantity;
+        this.created_at = created_at;
+        this.update_at = update_at;
+        this.color = color;
     }
 
     public String getBrand() {
@@ -126,8 +162,6 @@ public class Product {
         this.update_at = update_at;
     }
 
-<<<<<<< HEAD
-=======
     public String getColor() {
         return color;
     }
@@ -135,7 +169,6 @@ public class Product {
     public void setColor(String color) {
         this.color = color;
     }
->>>>>>> main
 
     
 

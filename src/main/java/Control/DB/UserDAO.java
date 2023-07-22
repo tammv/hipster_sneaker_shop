@@ -10,6 +10,8 @@ import java.util.List;
 
 import Model.Account_Google;
 import Model.Account_SignUp;
+import Model.Order;
+import Model.User;
 
 public class UserDAO {
 
@@ -21,7 +23,7 @@ public class UserDAO {
     public void insertUserTable(Account_SignUp acc) throws  ClassNotFoundException, SQLException{
         
 
-        String query = "Insert into User_Table (username, password, role , email , created_at, update_at) Values (?, ? ,?, ?, ? ,?)";
+        String query = "Insert into User_Table (username, password, role , email , created_at, update_at , img) Values (?, ? ,?, ?, ? ,? ,? )";
         conn = DBconnect.makeConnection();
         Date currentDate = new Date();
 
@@ -34,6 +36,7 @@ public class UserDAO {
         ps.setString(4, acc.getEmail());
         ps.setDate(5, sqlDate);
         ps.setDate(6, sqlDate);
+        ps.setString(7, "./imgs/ava_user.jpg");
         try {
             ps.executeUpdate();
             
@@ -44,7 +47,7 @@ public class UserDAO {
     }
 
     public void insertAccgmail(Account_Google acc) throws ClassNotFoundException, SQLException {
-        String query = "Insert into User_Table(username, role, email , fullname , created_at, update_at , password ) Values (?, ? ,? , ? ,? ,? , ?)";
+        String query = "Insert into User_Table(username, role, email , fullname , created_at, update_at , password , img) Values (?, ? ,? , ? ,? ,? , ? , ?)";
         conn = DBconnect.makeConnection();
         Date currentDate = new Date();
 
@@ -58,6 +61,7 @@ public class UserDAO {
         ps.setDate(5, sqlDate);
         ps.setDate(6, sqlDate);
         ps.setString(7, "88888888888888");
+        ps.setString(8, "./imgs/ava_user.jpg");
         try {
             ps.executeUpdate();
             
@@ -147,23 +151,102 @@ public class UserDAO {
         return null;
     }
 
-<<<<<<< HEAD
-=======
-    public void editProfile(String email, String name, String address, String username) throws SQLException, ClassNotFoundException{
-        try {
-            String query = "UPDATE [dbo].[User_Table] SET [email] = ?,[fullname] = ?,[address] = ? WHERE [username]=?";
-            conn = DBconnect.makeConnection();
-            ps = conn.prepareStatement(query);
-            ps.setString(1, email);
-            ps.setString(2, name);
-            ps.setString(3, address);
-            ps.setString(4, username);
-            ps.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    public void editProfile( String name, String address, String username , String filename , String phone) throws SQLException, ClassNotFoundException{
+        conn = DBconnect.makeConnection();
+        String query = "Update User_Table Set fullname = ? , address = ? , phone = ? , img = ? where username = ?";
+        ps = conn.prepareStatement(query);
+        ps.setString(1, name);
+        ps.setString(2, address);
+        ps.setString(3, phone);
+        ps.setString(4, "./imgs/" + filename);
+        ps.setString(5, username);
+        ps.executeUpdate();
     }
 
->>>>>>> main
+    public User getProfile(String username) throws SQLException, ClassNotFoundException{
+        String query = "Select username, role, email, fullname, address, phone , img From User_Table where username = ? ";
+        conn = DBconnect.makeConnection();
+        ps = conn.prepareStatement(query);
+        ps.setString(1, username);
+        rs = ps.executeQuery();
+        while(rs.next()){
+            return new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7));
+
+        }
+        return null;
+    }
+
+    public String getPass(String username) throws ClassNotFoundException, SQLException{
+        conn = DBconnect.makeConnection();
+        String query = "Select password from User_Table where username = ? " ;
+        ps =conn.prepareStatement(query);
+        ps.setString(1, username);
+        rs = ps.executeQuery();
+        while(rs.next()){
+            return rs.getString(1);
+        }
+        return null;
+    }
+
+    public List<User> getListUser() throws SQLException, ClassNotFoundException{
+        String query = "Select username, role, email, fullname, address, phone , img From User_Table ";
+        List<User> list = new ArrayList<>();
+        conn = DBconnect.makeConnection();
+        ps = conn.prepareStatement(query);
+        rs = ps.executeQuery();
+        while(rs.next()){
+            list.add(new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7)));
+        }
+        System.out.println(list.size());
+        return list;
+    }
+
+    public void updateRole(String userUpdate, String role) throws SQLException, ClassNotFoundException {
+        conn= DBconnect.makeConnection();
+        String query = "Update User_Table set role = ? where username = ?";
+        ps  = conn.prepareStatement(query);
+        ps.setString(1, role);
+        ps.setString(2, userUpdate);
+        ps.executeUpdate();
+    }
+
+    public void removeUser(String user) throws SQLException, ClassNotFoundException {
+        conn = DBconnect.makeConnection();
+        String query = "Update User_Table set role = ? where username = ?";
+        ps = conn.prepareStatement(query);
+        ps.setString(1, "customer");
+        ps.setString(2, user);
+        ps.executeUpdate();
+        
+    }
+
+    public String getPhone(Order o) throws SQLException, ClassNotFoundException{
+        conn = DBconnect.makeConnection();
+        String query = "Select phone from User_Table where username = ?";
+        ps = conn.prepareStatement(query);
+        ps.setString(1, o.getOrderDetail().getUsername());
+        rs = ps.executeQuery();
+        while(rs.next()){
+            return rs.getString(1);
+        }
+        return null;
+    }
+
+    public List<String> getUserShipper() throws SQLException, ClassNotFoundException {
+        List<String> list = new ArrayList<>();
+        conn = DBconnect.makeConnection();
+        String query  ="Select username from User_Table where role = ?";
+        ps = conn.prepareStatement(query);
+        ps.setString(1, "shipper");
+        rs = ps.executeQuery();
+        while(rs.next()){
+            list.add(rs.getString(1));        
+        
+        }
+        return list;
+    }
+
+    
+
 }
 

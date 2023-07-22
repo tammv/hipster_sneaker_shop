@@ -8,10 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-<<<<<<< HEAD
-=======
 import Model.Cart;
->>>>>>> main
 import Model.Product;
 import Model.Product_Cart;
 
@@ -38,25 +35,13 @@ public class CartUserDAO {
 
 
     public void insertProduct(int cartId, int product_id, int quantity, int size) throws SQLException, ClassNotFoundException {
-<<<<<<< HEAD
-        String query = "Insert into CartUser_Table Values(?,?,?,?,?)";
-        Date currentDate = new Date();
-
-        // Chuyển đổi sang kiểu java.sql.Date
-        java.sql.Date sqlDate = new java.sql.Date(currentDate.getTime());
-=======
         String query = "Insert into CartUser_Table Values(?,?,?,?)";
->>>>>>> main
         conn = DBconnect.makeConnection();
         ps = conn.prepareStatement(query);
         ps.setInt(1, cartId);
         ps.setInt(2, product_id);
         ps.setInt(3, size);
         ps.setInt(4, quantity);
-<<<<<<< HEAD
-        ps.setDate(5, sqlDate);
-=======
->>>>>>> main
         try {
             ps.execute();
         } catch (SQLException e) {
@@ -67,21 +52,6 @@ public class CartUserDAO {
 
     }
 
-<<<<<<< HEAD
-    private void update(int cartId, int product_id, int quantity, int size) throws SQLException, ClassNotFoundException {
-        String query = "Update CartUser_Table Set quantity = quantity + ? , updated_at = ? where cart_id = ? and product_id = ? and size = ?";
-        conn = DBconnect.makeConnection();
-        Date currentDate = new Date();
-
-        // Chuyển đổi sang kiểu java.sql.Date
-        java.sql.Date sqlDate = new java.sql.Date(currentDate.getTime());
-        ps = conn.prepareStatement(query);
-        ps.setInt(1, quantity);
-        ps.setDate(2, sqlDate);
-        ps.setInt(3, cartId);
-        ps.setInt(4, product_id );
-        ps.setInt(5, size);
-=======
 
     private void update(int cartId, int product_id, int quantity, int size) throws SQLException, ClassNotFoundException {
         String query = "Update CartUser_Table Set quantity = quantity + ?  where cart_id = ? and product_id = ? and size = ?";
@@ -91,7 +61,6 @@ public class CartUserDAO {
         ps.setInt(2, cartId);
         ps.setInt(3, product_id );
         ps.setInt(4, size);
->>>>>>> main
         ps.executeUpdate();
     }
 
@@ -106,8 +75,6 @@ public class CartUserDAO {
         ps.executeUpdate();
     }
 
-<<<<<<< HEAD
-=======
     public void deleteAll(int cartId) throws SQLException, ClassNotFoundException{
         String query = "Delete From CartUser_Table where cart_id = ?";
         conn = DBconnect.makeConnection();
@@ -127,7 +94,6 @@ public class CartUserDAO {
         }
     }
 
->>>>>>> main
     
 
     

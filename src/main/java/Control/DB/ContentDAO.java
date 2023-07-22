@@ -25,7 +25,7 @@ public class ContentDAO {
         List<Content> list_Content = new ArrayList<>();
         while (rs.next()) {
             Content p = new Content(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getDate(5),
-                    rs.getDate(6), rs.getString(7), rs.getString(8));
+                    rs.getDate(6), rs.getString(7), rs.getInt(8));
             list_Content.add(p);
         }
         return list_Content;
@@ -35,40 +35,82 @@ public class ContentDAO {
     // add content
     public void addContent(Content content) throws SQLException, ClassNotFoundException {
         conn = DBconnect.makeConnection();
-        String query = "INSERT INTO ContentCreator_Table (username, title, img, content, created_at, update_at, detail_title, content_id) VALUES (?, ?, ?, ?, GETDATE(), GETDATE(), ?, ?)";
+        String query = "INSERT INTO ContentCreator_Table (username, title, img, content, created_at, update_at, detail_title) VALUES (?, ?, ?, ?, GETDATE(), GETDATE(), ?)";
         ps = conn.prepareStatement(query);
         ps.setString(1, content.getUsername());
         ps.setString(2, content.getTitle());
         ps.setString(3, content.getImg());
         ps.setString(4, content.getContent());
         ps.setString(5, content.getDetail_title());
-        ps.setString(6, content.getId());
 
         ps.executeUpdate();
     }
 
     // get content by id
-    public Content getContentById(String contentId) throws SQLException, ClassNotFoundException {
+    public Content getContentById(int contentId) throws SQLException, ClassNotFoundException {
         conn = DBconnect.makeConnection();
         String query = "SELECT * FROM ContentCreator_Table WHERE content_id = ?";
         ps = conn.prepareStatement(query);
-        ps.setString(1, contentId);
+        ps.setInt(1, contentId);
         rs = ps.executeQuery();
         if (rs.next()) {
             Content content = new Content(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4),
-                    rs.getDate(5), rs.getDate(6), rs.getString(7), rs.getString(8));
+                    rs.getDate(5), rs.getDate(6), rs.getString(7), rs.getInt(8));
             return content;
         }
         return null; // Return null if content with the given ID is not found
     }
 
     // delete content
-    public void deleteContent(String contentId) throws SQLException, ClassNotFoundException {
+    public void deleteContent(int contentId) throws SQLException, ClassNotFoundException {
         conn = DBconnect.makeConnection();
         String query = "DELETE FROM ContentCreator_Table WHERE content_id = ?";
         ps = conn.prepareStatement(query);
-        ps.setString(1, contentId);
+        ps.setInt(1, contentId);
         ps.executeUpdate();
+    }
+
+    // Update content
+    public void updateContent(Content content) throws SQLException, ClassNotFoundException {
+        conn = DBconnect.makeConnection();
+        String query = "UPDATE ContentCreator_Table SET title=?, img=?, content=?, update_at=GETDATE() WHERE content_id=?";
+        ps = conn.prepareStatement(query);
+        ps.setString(1, content.getTitle());
+        ps.setString(2, content.getImg());
+        ps.setString(3, content.getContent());
+        ps.setInt(4, content.getId());
+        ps.executeUpdate();
+    }
+
+    
+
+    public void updateContent(int content_id, String content_title, String content_detail_title, String content_content,
+            String filename) throws SQLException, ClassNotFoundException {
+
+        conn = DBconnect.makeConnection();
+        String query = "Update ContentCreator_Table set title  =? ,img= ?, content =? , update_at =GETDATE() , detail_title =? where content_id =?";
+        ps = conn.prepareStatement(query);
+        ps.setString(1, content_title);
+        ps.setString(2, filename);
+        ps.setString(3, content_content);
+        ps.setString(4, content_detail_title);
+        ps.setInt(5, content_id);
+        ps.executeUpdate();
+
+    }
+
+    public void addContent(String username, String content_title, String content_detail_title, String content_content,
+            String filename) throws SQLException, ClassNotFoundException {
+
+            conn = DBconnect.makeConnection();
+            String query ="Insert into ContentCreator_Table Values(?, ?, ?,?,GETDATE(),GETDATE(),?)";
+            ps = conn.prepareStatement(query);
+            ps.setString(1, username);
+            ps.setString(2, content_title);
+            ps.setString(3, filename);
+            ps.setString(4, content_content);
+            ps.setString(5, content_detail_title);
+            ps.executeUpdate();
     }
 
 }

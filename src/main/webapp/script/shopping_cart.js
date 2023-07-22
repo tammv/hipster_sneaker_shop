@@ -1,25 +1,21 @@
-<<<<<<< HEAD
-
-=======
 var checkButton = true;
->>>>>>> main
+var checkUpdateTotal = false;
+
+var payment = document.getElementsByClassName('payment');
+
+
+
 
 const table_row = document.querySelectorAll('.table_row');
 function caculator(){
     for ( var i = 0 ; i < table_row.length; i++){
-<<<<<<< HEAD
-        var column_3 = parseFloat(table_row[i].querySelector('.column-3').textContent);
-=======
         var column_3 = parseFloat(table_row[i].querySelector('.price_product').textContent);
->>>>>>> main
         var column_5 = table_row[i].querySelector('.column-5');
         var quantity = table_row[i].querySelector('input');
         column_5.textContent = column_3 * parseInt(quantity.value) + "$";
     }
 }
 caculator();
-<<<<<<< HEAD
-=======
 
 
 const columns = document.querySelectorAll('.table_row .column-1, .table_row .column-2');
@@ -47,21 +43,30 @@ columns.forEach(column => {
 
 proceedToCheckout.addEventListener('click', (event) => {
   event.preventDefault();
-  if(checkButton){
+  if(checkButton&checkUpdateTotal){
 
     if (proceedToCheckout.href === "order?list_order=" || proceedToCheckout.href === "" ) {
       alert("Please complete all information ");
     } 
     else if(check()){
+      checkUpdateTotal = false;
       var city = cartTotal.querySelector('.city');
       var address = cartTotal.querySelector('.address');
       var totalOfBill = cartTotal.querySelector('.totalOfBill');
-      proceedToCheckout.href = proceedToCheckout.href + "&address="+address.value+"&city="+city.text +"&total="+totalOfBill.textContent;
+      var pay = "";
+      for ( var i = 0 ; i< payment.length; i++){
+        if (payment[i].checked){
+          pay = payment[i].value;
+          console.log(pay);
+          break;
+        }
+      }
+      proceedToCheckout.href = proceedToCheckout.href + "&address="+address.value+"&city="+city.text +"&total="+totalOfBill.textContent+"&pay=" + pay;
       window.location.href = proceedToCheckout.href;
     }
   }
   else{
-    alert("Looks like you haven't updated your cart to the latest status");
+    alert("Looks like you haven't updated your cart to the latest status or haven't update total");
   }
 
   
@@ -89,6 +94,7 @@ updateTotal.addEventListener("click", () =>{
 
   if(checkButton){
     if(check()){
+      checkUpdateTotal = true;
       var totalOfBill = cartTotal.querySelector('.totalOfBill');
       var subtotal = parseFloat((cartTotal.querySelector('.subtotal').textContent).replace("$",""));
       var fee = parseFloat(cartTotal.querySelector('.city').value);
@@ -108,12 +114,17 @@ function check(){
   var city = cartTotal.querySelector('.city');
   var address = cartTotal.querySelector('.address');
   var subtotal = cartTotal.querySelector('.subtotal');
+  var pay = cartTotal.querySelector('.payment');
   if (city.value === "" || address.value === "" ){
     alert("Please complete all information ");
     flag =false;
   }
   else if(subtotal.textContent == null || subtotal.textContent === ""){
     alert("choose at least one product");
+    flag = false;
+  }
+  else if(!pay || !pay.checked){
+    alert("choose method to pay");
     flag = false;
   }
   return flag;
@@ -145,4 +156,3 @@ sizeTable.forEach(size =>{
 
 
 
->>>>>>> main

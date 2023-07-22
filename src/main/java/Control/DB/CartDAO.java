@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CartDAO {
+public class CartDAO  {
     Connection conn;
     PreparedStatement ps;
     ResultSet rs;
@@ -30,4 +30,6 @@ public class CartDAO {
         return 0;
         
     }
+
+    
 }

@@ -9,11 +9,6 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.png" />
     <!--===============================================================================================-->
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
-=======
     <link
       rel="stylesheet"
       type="text/css"
@@ -25,7 +20,6 @@
       type="text/css"
       href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
     />
->>>>>>> main
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -34,21 +28,6 @@
       referrerpolicy="no-referrer"
     />
     <!--===============================================================================================-->
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css" />
-=======
     <link
       rel="stylesheet"
       type="text/css"
@@ -86,10 +65,11 @@
       type="text/css"
       href="vendor/perfect-scrollbar/perfect-scrollbar.css"
     />
->>>>>>> main
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <link rel="stylesheet" href="css/styleHome.css">
     <!--===============================================================================================-->
   </head>
   <body class="animsition">
@@ -103,14 +83,10 @@
     <c:import url="Cart.jsp" />
 
     <!-- Title page -->
-<<<<<<< HEAD
-    <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg')">
-=======
     <section
       class="bg-img1 txt-center p-lr-15 p-tb-92"
       style="background-image: url('images/bg-01.jpg')"
     >
->>>>>>> main
       <h2 class="ltext-105 cl0 txt-center">About</h2>
     </section>
 
@@ -123,29 +99,6 @@
               <h3 class="mtext-111 cl2 p-b-16">Our Story</h3>
 
               <p class="stext-113 cl6 p-b-26">
-<<<<<<< HEAD
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat consequat enim, non auctor
-                massa ultrices non. Morbi sed odio massa. Quisque at vehicula tellus, sed tincidunt augue. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas varius egestas diam,
-                eu sodales metus scelerisque congue. Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Maecenas gravida justo eu arcu egestas convallis. Nullam eu erat
-                bibendum, tempus ipsum eget, dictum enim. Donec non neque ut enim dapibus tincidunt vitae nec augue.
-                Suspendisse potenti. Proin ut est diam. Donec condimentum euismod tortor, eget facilisis diam faucibus
-                et. Morbi a tempor elit.
-              </p>
-
-              <p class="stext-113 cl6 p-b-26">
-                Donec gravida lorem elit, quis condimentum ex semper sit amet. Fusce eget ligula magna. Aliquam aliquam
-                imperdiet sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque congue ac orci ut gravida.
-                Aliquam erat volutpat. Donec iaculis lectus a arcu facilisis, eu sodales lectus sagittis. Etiam
-                pellentesque, magna vel dictum rutrum, neque justo eleifend elit, vel tincidunt erat arcu ut sem. Sed
-                rutrum, turpis ut commodo efficitur, quam velit convallis ipsum, et maximus enim ligula ac ligula.
-              </p>
-
-              <p class="stext-113 cl6 p-b-26">
-                Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1)
-                96 716 6879
-=======
                 Welcome to Hipster Store, your ultimate destination for all
                 things sneakers. We are passionate about footwear and strive to
                 bring you the latest trends from top brands, including Adidas,
@@ -180,7 +133,6 @@
                 appreciate a great pair of shoes, we invite you to join us at
                 Hipster Store and embark on a journey of self-expression through
                 sneakers.
->>>>>>> main
               </p>
             </div>
           </div>
@@ -200,16 +152,6 @@
               <h3 class="mtext-111 cl2 p-b-16">Our Mission</h3>
 
               <p class="stext-113 cl6 p-b-26">
-<<<<<<< HEAD
-                Mauris non lacinia magna. Sed nec lobortis dolor. Vestibulum rhoncus dignissim risus, sed consectetur
-                erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                Nullam maximus mauris sit amet odio convallis, in pharetra magna gravida. Praesent sed nunc fermentum mi
-                molestie tempor. Morbi vitae viverra odio. Pellentesque ac velit egestas, luctus arcu non, laoreet
-                mauris. Sed in ipsum tempor, consequat odio in, porttitor ante. Ut mauris ligula, volutpat in sodales
-                in, porta non odio. Pellentesque tempor urna vitae mi vestibulum, nec venenatis nulla lobortis. Proin at
-                gravida ante. Mauris auctor purus at lacus maximus euismod. Pellentesque vulputate massa ut nisl
-                hendrerit, eget elementum libero iaculis.
-=======
                 At Hipster Store, our mission is to provide sneaker enthusiasts
                 with a unique shopping experience and a diverse selection of
                 high-quality footwear from top brands. We are not just a shoe
@@ -227,19 +169,10 @@
                 believe that sneakers are not just fashion items but also a part
                 of your story and personality. We aspire to help you create your
                 own narrative through the shoes you choose.
->>>>>>> main
               </p>
 
               <div class="bor16 p-l-29 p-b-9 m-t-22">
                 <p class="stext-114 cl6 p-r-40 p-b-11">
-<<<<<<< HEAD
-                  Creativity is just connecting things. When you ask creative people how they did something, they feel a
-                  little guilty because they didn't really do it, they just saw something. It seemed obvious to them
-                  after a while.
-                </p>
-
-                <span class="stext-111 cl8"> - Steve Job’s </span>
-=======
                   We appreciate your support and companionship on this journey
                   and are eager to share our passion with you. We hope that
                   Hipster Store offers you an excellent shopping experience and
@@ -247,7 +180,6 @@
                 </p>
 
                 <span class="stext-111 cl8"> - The Hipster Store Team </span>
->>>>>>> main
               </div>
             </div>
           </div>
@@ -280,13 +212,9 @@
               </li>
 
               <li class="p-b-10">
-<<<<<<< HEAD
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Converse </a>
-=======
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
                   Converse
                 </a>
->>>>>>> main
               </li>
 
               <li class="p-b-10">
@@ -303,13 +231,6 @@
 
             <ul>
               <li class="p-b-10">
-<<<<<<< HEAD
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Track Order </a>
-              </li>
-
-              <li class="p-b-10">
-                <a href="#" class="stext-107 cl7 hov-cl1 trans-04"> Shipping </a>
-=======
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
                   Track Order
                 </a>
@@ -319,7 +240,6 @@
                 <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
                   Shipping
                 </a>
->>>>>>> main
               </li>
 
               <li class="p-b-10">
@@ -332,30 +252,13 @@
             <h4 class="stext-301 cl0 p-b-30">GET IN TOUCH</h4>
 
             <p class="stext-107 cl7 size-201">
-<<<<<<< HEAD
-              Any questions? Let us know in store at 8th floor, 379 Ngu Hanh Son Da Nang or call us on
-            </p>
-            <p>012931233</p>
-=======
               FPT University Da Nang, Urban area FPT City, Ngu Hanh Son, Da Nang
             </p>
             <p>0947481545</p>
->>>>>>> main
           </div>
           <div class="col-sm-6 col-lg-3 p-b-50">
             <h4 class="stext-301 cl0 p-b-30">Subscribe</h4>
             <div class="p-t-27">
-<<<<<<< HEAD
-              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-
-              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-
-              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-=======
               <a
                 href="https://www.facebook.com/hipsterstore"
                 class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
@@ -374,7 +277,6 @@
                 href="https://www.tiktok.com"
                 class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
               >
->>>>>>> main
                 <i class="fa-brands fa-tiktok"></i>
               </a>
             </div>
@@ -427,10 +329,7 @@
       });
     </script>
     <!--===============================================================================================-->
-<<<<<<< HEAD
-=======
     <script src="script/product.js"></script>
->>>>>>> main
     <script src="js/main.js"></script>
   </body>
 </html>
